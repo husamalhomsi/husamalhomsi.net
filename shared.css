@@ -1,0 +1,105 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+header {
+  border-bottom: solid dimgray 0.125rem;
+  font-size: larger;
+}
+
+footer {
+  border-top: solid dimgray 0.125rem;
+  font-size: smaller;
+}
+
+footer small {
+  font-size: inherit;
+}
+
+details, fieldset, input, select, td, th {
+  border: solid dimgray 0.0625em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+details, fieldset, td, th {
+  padding: 0.5em;
+}
+
+details, summary {
+  width: fit-content;
+}
+
+fieldset {
+  width: max-content;
+}
+
+input, select {
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: solid dimgray 0.125em;
+}
+
+input:invalid {
+  background-color: darkred;
+  color: white;
+}
+
+figure, div.hj {
+  margin: 1em;
+}
+
+div.hj>canvas, div.hj>img {
+  border: solid darkgoldenrod 2px;
+}
+
+img.inline {
+  height: 1.375em;
+  vertical-align: text-bottom;
+}
+
+a {
+  outline-style: none;
+  text-decoration: underline;
+}
+
+a:link {
+  color: blue;
+}
+
+a:link:focus-visible, a:link:hover {
+  background-color: blue;
+  color: white;
+}
+
+a:visited {
+  color: darkmagenta;
+}
+
+a:visited:focus-visible, a:visited:hover {
+  background-color: darkmagenta;
+  color: white;
+}
+
+a:active {
+  color: darkred;
+}
+
+a:active:focus-visible, a:active:hover {
+  background-color: darkred;
+  color: white;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
