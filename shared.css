@@ -54,11 +54,11 @@ input:invalid {
   color: white;
 }
 
-figure, div.hj {
+figure, div.framed {
   margin: 1em;
 }
 
-div.hj>canvas, div.hj>img {
+div.framed>canvas, div.framed>img {
   border: solid darkgoldenrod 2px;
 }
 
