@@ -62,11 +62,6 @@ div.framed>canvas, div.framed>img {
   border: solid darkgoldenrod 2px;
 }
 
-img.inline {
-  height: 1.375em;
-  vertical-align: text-bottom;
-}
-
 a {
   outline-style: none;
   text-decoration: underline;
