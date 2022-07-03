@@ -54,11 +54,11 @@ input:invalid {
   color: white;
 }
 
-figure, div.framed {
+figure {
   margin: 1em;
 }
 
-div.framed>canvas, div.framed>img {
+canvas.framed, img.framed, table.framed {
   border: solid darkgoldenrod 2px;
 }
 
@@ -95,6 +95,5 @@ a:active:focus-visible, a:active:hover {
 }
 
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: silver;
 }
