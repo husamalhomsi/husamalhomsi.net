@@ -8,22 +8,9 @@
   <link rel="stylesheet" href="shared.css">
   <title>HXY Images</title>
   <style>
-    td {
-      border-style: none;
-      height: 2em;
-      text-align: center;
-      width: 2em;
-    }
-
-    td.b {
-      background-color: black;
-      color: white;
-    }
-
-    td.w {
-      background-color: white;
-      color: black;
-    }
+    td {border-style: none; height: 2em; text-align: center; width: 2em;}
+    td.b {background-color: black; color: white;}
+    td.w {background-color: white; color: black;}
   </style>
   <header>
     <p><a href="/">Sawuare's Site</a></p>
@@ -31,18 +18,20 @@
   <main>
     <h1>HXY Images</h1>
     <section>
-      <h2>Description</h2>
-      <p><b>HXY images</b> are mathematical images that I discovered.</p>
-    </section>
-    <section>
-      <h2>Example</h2>
+      <h2>Introduction</h2>
+      <p>
+        <b>HXY images</b> are mathematical images that I discovered. Some of them are in the gallery below.
+        A description of them is in this <a href="https://github.com/Sawuare/misc/blob/main/doc/hxy.txt#L8-L17">documentation</a>.
+      </p>
       <figure>
+        <figcaption>Figure 1. Illustration of the HXY image whose width is 4 pixels and height is 3 pixels.</figcaption>
         <table class="framed">
           <tr><td class="w">0<td class="w">1<td class="w">2 <td class="w">3
           <tr><td class="w">4<td class="b">5<td class="w">6 <td class="b">7
           <tr><td class="b">8<td class="b">9<td class="b">10<td class="b">11
         </table>
       </figure>
+      <p>For Figure 1, the variables and sets defined in the documentation would be:</p>
       <ul>
         <li>w = 4
         <li>h = 3
@@ -52,22 +41,34 @@
       </ul>
     </section>
     <section>
+      <h2>Software</h2>
+      <p>
+        My program <b>hxy</b> writes HXY images, including the ones in the gallery below.
+        It is free and available in this <a href="https://github.com/Sawuare/misc">repository</a>.
+      </p>
+    </section>
+    <section>
       <h2>Gallery</h2>
       <figure>
+        <figcaption>Figure 2. The square HXY images whose side lengths are 512 pixels and 509 pixels, respectively.</figcaption>
         <img class="framed" src="hxy/w512h512.hxy.png">
         <img class="framed" src="hxy/w509h509.hxy.png">
       <figure>
       </figure>
+        <figcaption>Figure 3. The special shapes in Figure 2.</figcaption>
         <img class="framed" src="hxy/w512h512s.hxy.png">
         <img class="framed" src="hxy/w509h509s.hxy.png">
       </figure>
+      <p>To see the relationship between Figure 2 and Figure 3, do the following (or its equivalent) in GIMP (or another graphics program):</p>
+      <ol>
+        <li>Copy and paste (or save and open) an image from Figure 2.
+        <li>Use <kbd>Tools</kbd> &rarr; <kbd>Paint Tools</kbd> &rarr; <kbd>Bucket Fill</kbd> to flood-fill the top row with a color other than black or white.
+        <li>Use <kbd>Select</kbd> &rarr; <kbd>By Color</kbd> to select all white pixels, then use <kbd>Colors</kbd> &rarr; <kbd>Colorize</kbd> to color them black.
+      </ol>
     </section>
   </main>
   <footer>
-    <p><small>This page was last edited on <time>2022-07-03</time>.</small></p>
-    <p><small>
-      The images above by Sawuare are licensed under
-      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-    </small></p>
+    <p><small>This page was last edited on <time>2022-07-06</time>.</small></p>
+    <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
   </footer>
 </html>
