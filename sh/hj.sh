@@ -35,6 +35,7 @@ hj2png -z -i 25 -j 264
 hj2png -z -i 26 -j 15
 hj2png -z -i 27 -j 15
 
+hj2png -z -i 35 -j 20
 hj2png -z -i 36 -j 63
 hj2png -z -i 37 -j 63
 hj2png -z -i 39 -j 65537
