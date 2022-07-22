@@ -1,13 +1,13 @@
-var canvasElement, idElement, qValueElement, widthElement, heightElement, id, q, width, height, context, idat;
+var canvasElement, painterElement, qValueElement, widthElement, heightElement, painter, q, width, height, context, idat;
 
 window.onload = function() {
-  canvasElement = document.getElementById("canvas");
-  idElement     = document.getElementById("id");
-  qValueElement = document.getElementById("q-value");
-  widthElement  = document.getElementById("width");
-  heightElement = document.getElementById("height");
+  canvasElement  = document.getElementById("canvas");
+  painterElement = document.getElementById("painter");
+  qValueElement  = document.getElementById("q-value");
+  widthElement   = document.getElementById("width");
+  heightElement  = document.getElementById("height");
 
-  id = idElement.value;
+  painter = painterElement.value;
   q = qValueElement.value;
   width = canvasElement.width = widthElement.value;
   height = canvasElement.height = heightElement.value;
@@ -17,14 +17,14 @@ window.onload = function() {
 
   paint();
 
-  idElement.addEventListener("change", updateId);
+  painterElement.addEventListener("change", updatePainter);
   qValueElement.addEventListener("change", updateQ);
   widthElement.addEventListener("change", updateWidth);
   heightElement.addEventListener("change", updateHeight);
 }
 
-function updateId() {
-  id = idElement.value;
+function updatePainter() {
+  painter = painterElement.value;
   paint();
 }
 
@@ -50,9 +50,9 @@ function paint() {
     for (let x = 0; x < width; ++x) {
       let i = (y * width + x) * 4, s;
 
-      if (id == 0)
+      if (painter == 0)
         s = x & y & q;
-      else if (id == 22)
+      else if (painter == 22)
         s = (q ^ x) * x & (q ^ y) * y & q;
 
       s = s ? 0 : 255;

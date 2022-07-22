@@ -58,7 +58,7 @@ figure {
   margin: 1em;
 }
 
-canvas.framed, img.framed, table.framed {
+canvas.framed, img.framed {
   border: solid darkgoldenrod 2px;
 }
 

@@ -26,7 +26,7 @@
         <table>
           <tr>
             <th>Program
-            <th>ID
+            <th>Painter
             <th>Q-value
             <th>Offset
             <th>Length
@@ -53,14 +53,15 @@
       </p>
       <details>
         <summary>The combination</summary>
-        <p>ID is 22, Q-value is 15, and width and height are 16.</p>
+        <p>Painter is 22, Q-value is 15, and width and height are 16.</p>
         <p>
           Painter 22 reacts to some Q-value sequences, and Q-value 15 begins one of them: 15, 62, 252, 1016, 4080, 16352&hellip;.
+          Try these values below. Do you notice a pattern?
           Related sequences include
           <a href="https://oeis.org/A171472">A171472</a>,
           <a href="https://oeis.org/A171499">A171499</a>, and
           <a href="https://oeis.org/A171476">A171476</a>.
-          The program <a href="https://github.com/Sawuare/misc/blob/main/doc/hqz-seq.txt">hqz-seq</a> generates these sequences and more.
+          My program <b>hqz-seq</b> generates these sequences and more.
         </p>
       </details>
       <figure>
@@ -73,8 +74,8 @@
       <fieldset>
         <legend>Options</legend>
         <p>
-          <label>ID:
-            <select id="id">
+          <label>Painter:
+            <select id="painter">
               <option>0
               <option>22
             </select>
@@ -97,7 +98,7 @@
     </section>
   </main>
   <footer>
-    <p><small>This page was last edited on <time>2022-07-13</time>.</small></p>
+    <p><small>This page was last edited in <time>2022-07</time>.</small></p>
     <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
   </footer>
 </html>
