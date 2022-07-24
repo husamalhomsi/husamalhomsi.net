@@ -1,14 +1,14 @@
-var canvasElement, painterElement, qValueElement, widthElement, heightElement, painter, q, width, height, context, idat;
+var canvasElement, painterElement, qElement, widthElement, heightElement, painter, q, width, height, context, idat;
 
 window.onload = function() {
-  canvasElement  = document.getElementById("canvas");
+  canvasElement = document.getElementById("canvas");
   painterElement = document.getElementById("painter");
-  qValueElement  = document.getElementById("q-value");
-  widthElement   = document.getElementById("width");
-  heightElement  = document.getElementById("height");
+  qElement = document.getElementById("q");
+  widthElement = document.getElementById("width");
+  heightElement = document.getElementById("height");
 
   painter = painterElement.value;
-  q = qValueElement.value;
+  q = qElement.value;
   width = canvasElement.width = widthElement.value;
   height = canvasElement.height = heightElement.value;
 
@@ -18,7 +18,7 @@ window.onload = function() {
   paint();
 
   painterElement.addEventListener("change", updatePainter);
-  qValueElement.addEventListener("change", updateQ);
+  qElement.addEventListener("change", updateQ);
   widthElement.addEventListener("change", updateWidth);
   heightElement.addEventListener("change", updateHeight);
 }
@@ -29,7 +29,7 @@ function updatePainter() {
 }
 
 function updateQ() {
-  q = qValueElement.value;
+  q = qElement.value;
   paint();
 }
 
