@@ -1,3 +1,3 @@
 #! /bin/sh
 
-hj2png -z -i 22 -j 15 -l 16
+hqz-png -z -p 22 -q 15 -l 16
