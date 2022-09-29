@@ -18,7 +18,7 @@ footer small {
   font-size: inherit;
 }
 
-details, fieldset, input, select, td, th {
+fieldset, input, select, td, th {
   border: solid dimgray 0.0625em;
 }
 
@@ -26,12 +26,8 @@ table {
   border-collapse: collapse;
 }
 
-details, fieldset, td, th {
+fieldset, td, th {
   padding: 0.5em;
-}
-
-details, summary {
-  width: fit-content;
 }
 
 fieldset {
@@ -45,7 +41,7 @@ input, select {
   font-size: inherit;
 }
 
-input:focus-visible, select:focus-visible, summary:focus-visible {
+input:focus-visible, select:focus-visible {
   outline: solid dimgray 0.125em;
 }
 

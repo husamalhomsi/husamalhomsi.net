@@ -2,10 +2,12 @@
 <html lang="en-US">
   <meta charset="utf-8">
   <meta name="author" content="Sawuare">
+  <meta name="format-detection" content="telephone=no">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="initial-scale=1">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="shared.css">
+  <script src="hqz-images.js"></script>
   <title>HQZ Images</title>
   <header>
     <p><a href="/">Sawuare's Site</a></p>
@@ -23,7 +25,69 @@
         My other program <b>hqz-png</b> writes the images, including the ones in the gallery.
         These programs and more are free and available in this <a href="https://github.com/Sawuare/misc">repository</a>.
       </p>
-      <p>Check out <a href="hqz-web.html"><b>hqz-web</b></a> for an interactive demo of the images.</p>
+    </section>
+    <section>
+      <h2>Favicon</h2>
+      <p>This site's favicon is an HQZ image given by painter 22 and q-argument 15.</p>
+      <p>
+        Painter 22 reacts to some q-sequences, and q-argument 15 begins one of them: 15, 62, 252, 1016, 4080, 16352&hellip;.
+        Try these values in the demo below. Do you notice a pattern? Related sequences include
+        <a href="https://oeis.org/A171472">A171472</a>,
+        <a href="https://oeis.org/A171499">A171499</a>, and
+        <a href="https://oeis.org/A171476">A171476</a>. My program <b>hqz-seq</b> generates these sequences and more.
+      </p>
+      <figure>
+        <figcaption>Favicon</figcaption>
+        <img class="framed" src="favicon.png">
+      </figure>
+    </section>
+    <section>
+      <h2>Demo</h2>
+      <p>
+        This is an interactive demo of HQZ images. From the options below you can select a painter and input its q-argument to paint a canvas.
+        Note that the options are limited in comparison with those of the main program hqz-png.
+      </p>
+      <figure>
+        <figcaption>Some options of the demo and main programs.</figcaption>
+        <table>
+          <tr>
+            <th>Program
+            <th>Painter
+            <th>Q-argument
+            <th>Offset
+            <th>Length
+          <tr>
+            <td>Demo
+            <td>8 or 22
+            <td>1 to 4294967295
+            <td>0
+            <td>512
+          <tr>
+            <td>Main
+            <td>0 to 39
+            <td>0 to 4294967295
+            <td>0 to 4294967295
+            <td>1 to 32768
+        </table>
+      </figure>
+      <fieldset>
+        <legend>Options</legend>
+        <p>
+          <label>Painter:
+            <select id="painter">
+              <option>8
+              <option>22
+            </select>
+          </label>
+          <label>Q-argument:
+            <input id="q" type="number" min="1" max="4294967295" value="1" required>
+          </label>
+        </p>
+      </fieldset>
+      <figure>
+        <figcaption>Canvas</figcaption>
+        <canvas class="framed" id="canvas" width="512" height="512"></canvas>
+      </figure>
     </section>
     <section>
       <h2>Gallery</h2>
@@ -167,6 +231,6 @@
   </main>
   <footer>
     <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-    <p><small>This page was last edited in <time>2022-08</time>.</small></p>
+    <p><small>This page was last edited in <time>2022-09</time>.</small></p>
   </footer>
 </html>
