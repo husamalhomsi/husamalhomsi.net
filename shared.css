@@ -18,6 +18,10 @@ footer small {
   font-size: inherit;
 }
 
+figcaption, li, p {
+  max-width: 80ch;
+}
+
 fieldset, input, select, td, th {
   border: solid dimgray 0.0625em;
 }
