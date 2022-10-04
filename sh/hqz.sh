@@ -21,15 +21,7 @@ hqz-png -z -p 14 -q 16384
 hqz-png -z -p 19 -q 19
 
 hqz-png -z -p 21 -q 447
-hqz-png -z -p 22 -q 511
-hqz-png -z -p 22 -q 1022
-hqz-png -z -p 22 -q 2044
-hqz-png -z -p 22 -q 4088
-hqz-png -z -p 22 -q 8176
 hqz-png -z -p 22 -q 16352
-hqz-png -z -p 22 -q 32704
-hqz-png -z -p 22 -q 65408
-hqz-png -z -p 22 -q 130816
 
 hqz-png -z -p 25 -q 264
 hqz-png -z -p 26 -q 15
