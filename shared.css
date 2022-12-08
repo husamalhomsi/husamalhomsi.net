@@ -5,12 +5,12 @@ body {
 }
 
 header {
-  border-bottom: solid dimgray 0.125rem;
+  border-bottom: solid dimgray 2px;
   font-size: larger;
 }
 
 footer {
-  border-top: solid dimgray 0.125rem;
+  border-top: solid dimgray 2px;
   font-size: smaller;
 }
 
@@ -23,7 +23,7 @@ figcaption, li, p {
 }
 
 fieldset, input, select, td, th {
-  border: solid dimgray 0.0625em;
+  border: solid dimgray 1px;
 }
 
 table {
@@ -46,7 +46,7 @@ input, select {
 }
 
 input:focus-visible, select:focus-visible {
-  outline: solid dimgray 0.125em;
+  outline: solid dimgray 2px;
 }
 
 input:invalid {
