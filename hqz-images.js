@@ -1,36 +1,29 @@
-var canvasElement, painterElement, qElement, painter, q, context, idat;
+"using strict";
+
+let painterElement, qElement, canvas, width, height, context, idat;
 
 window.onload = function() {
-  canvasElement = document.getElementById("canvas");
   painterElement = document.getElementById("painter");
   qElement = document.getElementById("q");
-
-  painter = painterElement.value;
-  q = qElement.value;
-
-  context = canvasElement.getContext("2d");
-  idat = context.createImageData(512, 512);
+  canvas = document.getElementById("canvas");
+  width = canvas.width;
+  height = canvas.height;
+  context = canvas.getContext("2d");
+  idat = context.createImageData(width, height);
 
   paint();
 
-  painterElement.addEventListener("change", updatePainter);
-  qElement.addEventListener("change", updateQ);
-}
-
-function updatePainter() {
-  painter = painterElement.value;
-  paint();
-}
-
-function updateQ() {
-  q = qElement.value;
-  paint();
+  painterElement.addEventListener("change", paint);
+  qElement.addEventListener("change", paint);
 }
 
 function paint() {
-  for (let y = 0; y < 512; ++y)
-    for (let x = 0; x < 512; ++x) {
-      let i = (y * 512 + x) * 4, s;
+  let painter = painterElement.value;
+  let q = qElement.value;
+
+  for (let y = 0; y < height; ++y)
+    for (let x = 0; x < width; ++x) {
+      let i = (y * width + x) * 4, s;
 
       if (painter == 8)
         s = (x + y) % q;
