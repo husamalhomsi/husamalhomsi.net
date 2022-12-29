@@ -18,7 +18,7 @@ footer small {
   font-size: inherit;
 }
 
-figcaption, li, p {
+figcaption, h1, h2, li, p {
   max-width: 80ch;
 }
 
