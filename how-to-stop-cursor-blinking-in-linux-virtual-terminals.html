@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <meta name="author" content="Sawuare">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="shared.css">
+  <title>How to Stop Cursor Blinking in Linux Virtual Terminals</title>
+  <header>
+    <p><a href="/">Sawuare's Site</a></p>
+  </header>
+  <main>
+    <h1>How to Stop Cursor Blinking in Linux Virtual Terminals</h1>
+    <p>In Linux virtual terminals, the cursor blinks by default, which can be distracting and annoying.
+    This tutorial explains one method for stopping the blinking.</p>
+    <section>
+      <h2>Prerequisites</h2>
+      <p>Your crontab files must support <b>@reboot</b>, and your CRONTAB(5) manual page should say this.
+      You can open the page by executing</p>
+      <figure><kbd>man 5 crontab</kbd></figure>
+    </section>
+    <section>
+      <h2>Tutorial</h2>
+      <p>The file <b>/sys/class/graphics/fbcon/cursor_blink</b> contains a number.
+      Wether the number is <b>1</b> or <b>0</b> determines whether the cursor blinks or not, respectively.
+      The file requires root's permission to be written, and its content is reset at reboot.
+      Here is how to stop the blinking by setting the content to 0 at reboot:</p>
+      <ol>
+        <li>Open a terminal.
+        <li>Log in as root by executing
+          <figure><kbd>su -l root</kbd></figure>
+        <li>Create a shell script that stops the blinking by executing
+          <figure><kbd>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
+        <li>Edit root's crontab file by executing
+          <figure><kbd>crontab -e</kbd></figure>
+        <li>Schedule the script to be executed at reboot by adding to the file a line that says
+          <figure><kbd>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
+      </ol>
+    </section>
+    <section>
+      <h2>Testing</h2>
+      <p>To test the method, reboot then open a virtual terminal.
+      The cursor should not be blinking.</p>
+    </section>
+  </main>
+  <footer>
+    <p><small>This page was last edited in 2023-01.</small></p>
+  </footer>
+</html>
