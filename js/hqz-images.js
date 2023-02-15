@@ -1,4 +1,4 @@
-"using strict";
+"use strict";
 
 let painterElement, qElement, canvas, width, height, context, idat;
 
