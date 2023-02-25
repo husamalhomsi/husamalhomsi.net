@@ -1,15 +1,13 @@
 "use strict";
 
-let painterElement, qElement, canvas, width, height, context, idat;
+let painterElement, qElement, canvas, context, idat;
 
 window.onload = function() {
   painterElement = document.getElementById("painter");
   qElement = document.getElementById("q");
   canvas = document.getElementById("canvas");
-  width = canvas.width;
-  height = canvas.height;
   context = canvas.getContext("2d");
-  idat = context.createImageData(width, height);
+  idat = context.createImageData(canvas.width, canvas.height);
 
   paint();
 
@@ -21,9 +19,9 @@ function paint() {
   let painter = painterElement.value;
   let q = qElement.value;
 
-  for (let y = 0; y < height; ++y)
-    for (let x = 0; x < width; ++x) {
-      let i = (y * width + x) * 4, s;
+  for (let y = 0; y < canvas.height; ++y)
+    for (let x = 0; x < canvas.width; ++x) {
+      let i = (y * canvas.width + x) * 4, s;
 
       if (painter == 8)
         s = (x + y) % q;
