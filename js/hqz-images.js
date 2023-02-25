@@ -1,13 +1,13 @@
 "use strict";
 
-let painterElement, qElement, canvas, context, idat;
+let painterElement, qElement, canvas, context, imageData;
 
 window.onload = function() {
   painterElement = document.getElementById("painter");
   qElement = document.getElementById("q");
   canvas = document.getElementById("canvas");
   context = canvas.getContext("2d");
-  idat = context.createImageData(canvas.width, canvas.height);
+  imageData = context.createImageData(canvas.width, canvas.height);
 
   paint();
 
@@ -30,11 +30,11 @@ function paint() {
 
       s = s ? 0 : 255;
 
-      idat.data[i    ] = s;
-      idat.data[i + 1] = s;
-      idat.data[i + 2] = s;
-      idat.data[i + 3] = 255;
+      imageData.data[i    ] = s;
+      imageData.data[i + 1] = s;
+      imageData.data[i + 2] = s;
+      imageData.data[i + 3] = 255;
     }
 
-  context.putImageData(idat, 0, 0);
+  context.putImageData(imageData, 0, 0);
 }
