@@ -58,6 +58,10 @@ figure {
   margin: 1em;
 }
 
+li {
+  margin-top: 0.25em;
+}
+
 canvas.framed, img.framed {
   border: solid darkgoldenrod 2px;
 }
