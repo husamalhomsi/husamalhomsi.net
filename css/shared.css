@@ -1,3 +1,16 @@
+html {
+  /* a = minimum contrast ratio = 1 */
+  /* b = maximum contrast ratio = 21 */
+  /* r = contrast ratio range = b - a = 20 */
+  /* f(x) = a + r / x */
+  --gray:    hsl(0     0% 39%); /* Target contrast ratio on white = f(4) = 6 */
+  --silver:  hsl(0     0% 74%); /* Target contrast ratio on black = f(2) = 11 */
+  --red:     hsl(0   100% 25%); /* Target contrast ratio on white = f(2) = 11 */
+  --gold:    hsl(45  100% 34%); /* Target contrast ratio on white = f(8) = 3.5 */
+  --blue:    hsl(240 100% 41%); /* Target contrast ratio on white = f(2) = 11 */
+  --magenta: hsl(300 100% 22%); /* Target contrast ratio on white = f(2) = 11 */
+}
+
 body {
   background-color: white;
   color: black;
@@ -5,12 +18,12 @@ body {
 }
 
 header {
-  border-bottom: solid dimgray 2px;
+  border-bottom: solid var(--gray) 2px;
   font-size: larger;
 }
 
 footer {
-  border-top: solid dimgray 2px;
+  border-top: solid var(--gray) 2px;
   font-size: smaller;
 }
 
@@ -23,7 +36,7 @@ figcaption, h1, h2, li, p {
 }
 
 fieldset, input, select, td, th {
-  border: solid dimgray 1px;
+  border: solid var(--gray) 1px;
 }
 
 table {
@@ -46,11 +59,11 @@ input, select {
 }
 
 input:focus-visible, select:focus-visible {
-  outline: solid dimgray 2px;
+  outline: solid var(--gray) 2px;
 }
 
 input:invalid {
-  background-color: darkred;
+  background-color: var(--red);
   color: white;
 }
 
@@ -63,7 +76,7 @@ li {
 }
 
 canvas.framed, img.framed {
-  border: solid darkgoldenrod 2px;
+  border: solid var(--gold) 2px;
 }
 
 a {
@@ -72,32 +85,32 @@ a {
 }
 
 a:link {
-  color: blue;
+  color: var(--blue);
 }
 
 a:link:focus-visible, a:link:hover {
-  background-color: blue;
+  background-color: var(--blue);
   color: white;
 }
 
 a:visited {
-  color: darkmagenta;
+  color: var(--magenta);
 }
 
 a:visited:focus-visible, a:visited:hover {
-  background-color: darkmagenta;
+  background-color: var(--magenta);
   color: white;
 }
 
 a:active {
-  color: darkred;
+  color: var(--red);
 }
 
 a:active:focus-visible, a:active:hover {
-  background-color: darkred;
+  background-color: var(--red);
   color: white;
 }
 
 ::selection {
-  background-color: silver;
+  background-color: var(--silver);
 }
