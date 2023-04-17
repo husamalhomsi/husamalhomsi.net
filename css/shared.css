@@ -114,3 +114,15 @@ a:active:focus-visible, a:active:hover {
 ::selection {
   background-color: var(--silver);
 }
+
+@media (max-width: 540px), (max-height: 540px) {
+  canvas.sqr512, img.sqr512 {
+    width:  256px;
+    height: 256px;
+  }
+
+  img.sqr509 {
+    width:  254.5px;
+    height: 254.5px;
+  }
+}
