@@ -14,22 +14,26 @@
   </header>
   <main>
     <h1>HPQ Images</h1>
-    <p><b>HPQ images</b> are mathematical images which I discovered around 2019.
-    Their definition is in the <a href="https://github.com/Sawuare/misk/blob/main/doc/hpq.txt#L25-L30">documentation</a>.
-    Some of them are in the gallery below.</p>
+    <p>HPQ images are mathematical images. I discovered them around 2019.
+    <a href="https://github.com/Sawuare/misk/blob/main/doc/hpq.txt#L25-L30">Definition</a>.</p>
     <section>
       <h2>Software</h2>
-      <p>My program <b>hpq-fb</b> displays HPQ images and makes it easy to explore them.
-      My other program <b>hpq-png</b> writes the images, including the ones in the gallery.
-      These programs and more are part of <a href="misk.html">misk</a>.</p>
+      <ul>
+        <li><a href="https://github.com/Sawuare/misk/blob/main/src/hpq-fb.c">hpq-fb</a> - display HPQ images on the Linux framebuffer device
+        <li><a href="https://github.com/Sawuare/misk/blob/main/src/hpq-png.c">hpq-png</a> - write an HPQ image to a PNG file
+        <li><a href="https://github.com/Sawuare/misk/blob/main/src/hpq-seq.c">hpq-seq</a> - write some HPQ q-sequences
+        <li><a href="https://github.com/Sawuare/misk/blob/main/src/hpq.h">hpq.h</a> - code for HPQ images
+      </ul>
+      <p>These programs and libraries are part of <a href="misk.html">misk</a>.
+      I use hpq-fb to explore the images and hpq-png to save them.</p>
     </section>
     <section>
       <h2>Favicon</h2>
       <p>This site's favicon is an HPQ image given by painter 22 and q-argument 15.</p>
-      <p>Painter 22 reacts to some q-sequences, and q-argument 15 begins one of them: 15, 62, 252, 1016, 4080, 16352&hellip;
-      You can try these values in the demo below.
+      <p>For painter 22, q-argument 15 begins a q-sequence: 15, 62, 252, 1016, 4080, 16352&hellip;
+      To see why these values are a sequence, input them in the demo below.
       Related sequences include <a href="https://oeis.org/A171472">A171472</a> and <a href="https://oeis.org/A171499">A171499</a>.
-      My program <b>hpq-seq</b> generates these sequences and more.</p>
+      hpq-seq generates these sequences and more.</p>
       <figure>
         <figcaption>Favicon</figcaption>
         <img class="framed" src="img/favicon.png">
@@ -84,7 +88,8 @@
     </section>
     <section>
       <h2>Gallery</h2>
-      <p>The images here are 512 pixels in width and height.
+      <p>The images here were written using hpq-png.
+      They are 512 pixels in width and height.
       The captions show the painter and q-argument used.</p>
       <figure>
         <figcaption>p0 q448</figcaption>
@@ -190,6 +195,6 @@
   </main>
   <footer>
     <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-    <p><small>This page was last edited in 2023-03.</small></p>
+    <p><small>This page was last edited in 2023-04.</small></p>
   </footer>
 </html>
