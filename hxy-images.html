@@ -12,14 +12,52 @@
   </header>
   <main>
     <h1>HXY Images</h1>
-    <p>HXY images are mathematical images. I discovered them around 2020.
-    <a href="https://github.com/Sawuare/misk/blob/main/doc/hxy.txt#L8-L38">Definition</a>.</p>
+    <p>HXY images are mathematical images. I discovered them around 2020.</p>
     <section>
       <h2>Software</h2>
       <ul>
         <li><a href="https://github.com/Sawuare/misk/blob/main/src/hxy.c">hxy</a> - write an HXY image to a PNG file
       </ul>
       <p>This program is part of <a href="misk.html">misk</a>.</p>
+    </section>
+    <section>
+      <h2>Definition</h2>
+      <p>Let the positive integers w and h be the width and height of an HXY image in pixels, respectively.
+      Let X and Y be the sets {0, 1, &hellip;, w - 1} and {0, 1, &hellip;, h - 1}, respectively.
+      Let P be the set of products of multiplying every member of X by every member of Y.
+      Let the pixels of the image be numbered in row-major order by the sequence {0, 1, &hellip;, w &times; h - 1}.
+      If the number of a pixel is a member of P, the pixel is white, otherwise the pixel is black.</p>
+      <p>For example, the HXY image whose width is 4 pixels and height is 3 pixels would have its pixels numbered as follows:</p>
+      <figure><table>
+        <tr><td>00<td>01<td>02<td>03
+        <tr><td>04<td>05<td>06<td>07
+        <tr><td>08<td>09<td>10<td>11
+      </table></figure>
+      <p>For that image, the variables and sets defined above would be:</p>
+      <ul>
+        <li>w = 4
+        <li>h = 3
+        <li>X = {0, 1, 2, 3}
+        <li>Y = {0, 1, 2}
+        <li>P = {0, 1, 2, 3, 4, 6}
+      </ul>
+      <p>So, that image would have its pixels colored as follows:</p>
+      <figure><table>
+        <tr><td>White<td>White<td>White<td>White
+        <tr><td>White<td>Black<td>White<td>Black
+        <tr><td>Black<td>Black<td>Black<td>Black
+      </table></figure>
+    </section>
+    <section>
+      <h2>Observations</h2>
+      <ul>
+        <li>The top row of an HXY image is white if
+          <ul>
+            <li>its width and height are equal to 1 or
+            <li>its height is greater than 1.
+          </ul>
+        <li>Flood-filling the top row reveals a special shape.
+      </ul>
     </section>
     <section>
       <h2>Gallery</h2>
@@ -54,6 +92,6 @@
   </main>
   <footer>
     <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-    <p><small>This page was last edited in 2023-04.</small></p>
+    <p><small>This page was last edited in 2023-05.</small></p>
   </footer>
 </html>
