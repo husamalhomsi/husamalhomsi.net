@@ -25,27 +25,25 @@
       <p>Let the positive integers w and h be the width and height of an HXY image in pixels, respectively.
       Let X and Y be the sets {0, 1, &hellip;, w - 1} and {0, 1, &hellip;, h - 1}, respectively.
       Let P be the set of products of multiplying every member of X by every member of Y.
-      Let the pixels of the image be numbered in row-major order by the sequence {0, 1, &hellip;, w &times; h - 1}.
+      Let the pixels of the image be numbered in row-major order by the sequence {0, 1, &hellip;, w &sdot; h - 1}.
       If the number of a pixel is a member of P, the pixel is white, otherwise the pixel is black.</p>
-      <p>For example, the HXY image whose width is 4 pixels and height is 3 pixels would have its pixels numbered as follows:</p>
+      <p>For example, the HXY image whose width is 3 pixels and height is 2 pixels would have its pixels numbered as follows:</p>
       <figure><table>
-        <tr><td>00<td>01<td>02<td>03
-        <tr><td>04<td>05<td>06<td>07
-        <tr><td>08<td>09<td>10<td>11
+        <tr><td>0<td>1<td>2
+        <tr><td>3<td>4<td>5
       </table></figure>
       <p>For that image, the variables and sets defined above would be:</p>
       <ul>
-        <li>w = 4
-        <li>h = 3
-        <li>X = {0, 1, 2, 3}
-        <li>Y = {0, 1, 2}
-        <li>P = {0, 1, 2, 3, 4, 6}
+        <li>w = 3
+        <li>h = 2
+        <li>X = {0, 1, 2}
+        <li>Y = {0, 1}
+        <li>P = {0, 1, 2}
       </ul>
       <p>So, that image would have its pixels colored as follows:</p>
       <figure><table>
-        <tr><td>White<td>White<td>White<td>White
-        <tr><td>White<td>Black<td>White<td>Black
-        <tr><td>Black<td>Black<td>Black<td>Black
+        <tr><td>White<td>White<td>White
+        <tr><td>Black<td>Black<td>Black
       </table></figure>
     </section>
     <section>
