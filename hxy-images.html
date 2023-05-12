@@ -22,11 +22,10 @@
     </section>
     <section>
       <h2>Definition</h2>
-      <p>Let the positive integers w and h be the width and height of an HXY image in pixels, respectively.
-      Let X and Y be the sets {0, 1, &hellip;, w - 1} and {0, 1, &hellip;, h - 1}, respectively.
-      Let P be the set of products of multiplying every member of X by every member of Y.
-      Let the pixels of the image be numbered in row-major order by the sequence {0, 1, &hellip;, w &sdot; h - 1}.
-      If the number of a pixel is a member of P, the pixel is white, otherwise the pixel is black.</p>
+      <p>For an HXY image with width w and height h, in pixels, w, h &Element; &Nopf; \ {0},
+      let X = {x &Element; &Nopf; | x < w}, Y = {y &Element; &Nopf; | y < h}, and P = {x &sdot; y | x &Element; X, y &Element; Y}.
+      Number the pixels of the image 0, 1, &hellip; from top to bottom and left to right.
+      If the number of a pixel is a member of P, it is white, otherwise it is black.</p>
       <p>For example, the HXY image whose width is 3 pixels and height is 2 pixels would have its pixels numbered as follows:</p>
       <figure><table>
         <tr><td>0<td>1<td>2
