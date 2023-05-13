@@ -77,6 +77,7 @@ li {
 
 canvas.framed, img.framed {
   border: solid var(--gold) 1px;
+  image-rendering: pixelated;
 }
 
 a {
