@@ -18,12 +18,12 @@ body {
 }
 
 header {
-  border-bottom: solid var(--gray) 2px;
+  border-bottom: solid var(--gray) 1px;
   font-size: larger;
 }
 
 footer {
-  border-top: solid var(--gray) 2px;
+  border-top: solid var(--gray) 1px;
   font-size: smaller;
 }
 
@@ -59,7 +59,7 @@ input, select {
 }
 
 input:focus-visible, select:focus-visible {
-  outline: solid var(--gray) 2px;
+  outline: solid var(--gray) 1px;
 }
 
 input:invalid {
@@ -76,7 +76,7 @@ li {
 }
 
 canvas.framed, img.framed {
-  border: solid var(--gold) 2px;
+  border: solid var(--gold) 1px;
 }
 
 a {

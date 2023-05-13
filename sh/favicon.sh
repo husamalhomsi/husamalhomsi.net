@@ -1,3 +1,3 @@
 #! /bin/sh
 
-hpq-png -z -p 22 -q 15 -l 16
+hpq-png -z -p 27 -q 3 -l 16
