@@ -6,6 +6,7 @@
   <meta name="viewport" content="initial-scale=1">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/hxy-images.css">
   <title>HXY Images</title>
   <header>
     <p><a href="/">Sawuare's Site</a></p>
@@ -25,22 +26,22 @@
       <p>For an HXY image with width w and height h, in pixels, w, h &Element; &Nopf; \ {0},
       let X = {x &Element; &Nopf; | x < w}, Y = {y &Element; &Nopf; | y < h}, and P = {x &sdot; y | x &Element; X, y &Element; Y}.
       Number the pixels of the image 0, 1, &hellip; from top to bottom and left to right.
-      If the number of a pixel is a member of P, it is white, otherwise it is black.</p>
-      <p>For example, the HXY image whose width is 3 pixels and height is 2 pixels would have its pixels numbered as follows:</p>
-      <figure><table>
-        <tr><td>0<td>1<td>2
-        <tr><td>3<td>4<td>5
-      </table></figure>
-      <p>For that image, the variables and sets defined above would be:</p>
+      A pixel is white if its number is a member of P, otherwise it is black.</p>
+    </section>
+    <section>
+      <h2>Example</h2>
+      <p>For the HXY image with width w = 3 and height h = 2, the sets defined above become:</p>
       <ul>
-        <li>w = 3
-        <li>h = 2
         <li>X = {0, 1, 2}
         <li>Y = {0, 1}
         <li>P = {0, 1, 2}
       </ul>
-      <p>So, that image would have its pixels colored as follows:</p>
-      <figure><table>
+      <p>The pixels of the image are numbered and colored as follows:</p>
+      <figure><table class="image">
+        <tr><td>0<td>1<td>2
+        <tr><td>3<td>4<td>5
+      </table></figure>
+      <figure><table class="image">
         <tr><td>White<td>White<td>White
         <tr><td>Black<td>Black<td>Black
       </table></figure>
