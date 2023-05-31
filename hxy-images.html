@@ -6,7 +6,7 @@
   <meta name="viewport" content="initial-scale=1">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="css/shared.css">
-  <link rel="stylesheet" href="css/hxy-images.css">
+  <link rel="stylesheet" href="css/xxx-images.css">
   <title>HXY Images</title>
   <header>
     <p><a href="/">Sawuare's Site</a></p>
@@ -34,7 +34,7 @@
       <ul>
         <li>X = {0, 1, 2}
         <li>Y = {0, 1}
-        <li>P = {0, 1, 2}
+        <li>P = {0 &sdot; 0, 0 &sdot; 1, 1 &sdot; 0, 1 &sdot; 1, 2 &sdot; 0, 2 &sdot; 1} = {0, 1, 2}
       </ul>
       <p>The pixels of the image are numbered as follows:</p>
       <figure><table class="image">
@@ -46,6 +46,7 @@
         <tr><td>White<td>White<td>White
         <tr><td>Black<td>Black<td>Black
       </table></figure>
+      <p>Pixel 0 is white because its number is in P. Pixel 3 is black because its number is not in P.</p>
     </section>
     <section>
       <h2>Observations</h2>
@@ -58,7 +59,7 @@
         <li>Flood-filling the top row reveals a special shape.
       </ul>
     </section>
-    <section>
+    <section id="gallery">
       <h2>Gallery</h2>
       <p>The images here were written using hxy.</p>
       <figure>

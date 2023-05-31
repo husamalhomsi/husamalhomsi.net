@@ -1,0 +1,17 @@
+table.image td {
+  text-align: center;
+  width: 3em;
+  height: 3em;
+}
+
+/* Hacky */
+section#gallery figure {
+  display: inline-block;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+/* Hacky */
+section#gallery figure + p {
+  margin-top: 0;
+}
