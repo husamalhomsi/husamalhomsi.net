@@ -23,9 +23,9 @@
     </section>
     <section>
       <h2>Definition</h2>
-      <p>For an HXY image with width w and height h, in pixels, w, h &in; &naturals; &setminus; {0},
-      let X = {x &in; &naturals; &VerticalBar; x &lt; w}, Y = {y &in; &naturals; &VerticalBar; y &lt; h}, and P = {x &sdot; y &VerticalBar; x &in; X, y &in; Y}.
-      Number the pixels of the image 0, 1, &hellip; from top to bottom and left to right.
+      <p>For an HXY image with width w and height h, in pixels, w, h ∈ ℕ ∖ {0},
+      let X = {x ∈ ℕ ∣ x &lt; w}, Y = {y ∈ ℕ ∣ y &lt; h}, and P = {x ⋅ y ∣ x ∈ X, y ∈ Y}.
+      Number the pixels of the image 0, 1, … from top to bottom and left to right.
       A pixel is white if its number is in P, otherwise it is black.</p>
     </section>
     <section>
@@ -34,7 +34,7 @@
       <ul>
         <li>X = {0, 1, 2}
         <li>Y = {0, 1}
-        <li>P = {0 &sdot; 0, 0 &sdot; 1, 1 &sdot; 0, 1 &sdot; 1, 2 &sdot; 0, 2 &sdot; 1} = {0, 1, 2}
+        <li>P = {0 ⋅ 0, 0 ⋅ 1, 1 ⋅ 0, 1 ⋅ 1, 2 ⋅ 0, 2 ⋅ 1} = {0, 1, 2}
       </ul>
       <p>The pixels of the image are numbered as follows:</p>
       <figure><table class="image">
@@ -46,7 +46,7 @@
         <tr><td>White<td>White<td>White
         <tr><td>Black<td>Black<td>Black
       </table></figure>
-      <p>Pixel 0 is white because its number is in P. Pixel 3 is black because its number is not in P.</p>
+      <p>Pixel 0 is white because 0 is in P. Pixel 3 is black because 3 is not in P.</p>
     </section>
     <section>
       <h2>Observations</h2>
@@ -85,13 +85,13 @@
       <p>To see the relationship between Figure 1 and Figure 2, do the following in GIMP (or do its equivalent in another graphics program):</p>
       <ol>
         <li>Copy and paste (or save and open) an image from Figure 1.
-        <li>Use <kbd>Tools</kbd> &rarr; <kbd>Paint Tools</kbd> &rarr; <kbd>Bucket Fill</kbd> to flood-fill the top row with a color other than black or white.
-        <li>Use <kbd>Select</kbd> &rarr; <kbd>By Color</kbd> to select all white pixels, then use <kbd>Colors</kbd> &rarr; <kbd>Colorize</kbd> to color them black.
+        <li>Use <kbd>Tools</kbd> → <kbd>Paint Tools</kbd> → <kbd>Bucket Fill</kbd> to flood-fill the top row with a color other than black or white.
+        <li>Use <kbd>Select</kbd> → <kbd>By Color</kbd> to select all white pixels, then use <kbd>Colors</kbd> → <kbd>Colorize</kbd> to color them black.
       </ol>
     </section>
   </main>
   <footer>
     <p><small>The images above by Sawuare are licensed under <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-    <p><small>This page was last edited in 2023-05.</small></p>
+    <p><small>This page was last edited in 2023-06.</small></p>
   </footer>
 </html>
