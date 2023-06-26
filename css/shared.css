@@ -1,14 +1,8 @@
 html {
-  /* a = minimum contrast ratio = 1 */
-  /* b = maximum contrast ratio = 21 */
-  /* r = contrast ratio range = b - a = 20 */
-  /* f(x) = a + r / x */
-  --gray:    hsl(0     0% 39%); /* Target contrast ratio on white = f(4) = 6 */
-  --silver:  hsl(0     0% 74%); /* Target contrast ratio on black = f(2) = 11 */
-  --red:     hsl(0   100% 25%); /* Target contrast ratio on white = f(2) = 11 */
-  --gold:    hsl(45  100% 34%); /* Target contrast ratio on white = f(8) = 3.5 */
-  --blue:    hsl(240 100% 41%); /* Target contrast ratio on white = f(2) = 11 */
-  --magenta: hsl(300 100% 22%); /* Target contrast ratio on white = f(2) = 11 */
+  --silver: hsl(0    0% 58%);
+  --brown:  hsl(50 100% 20%);
+  --pyrite: hsl(50 100% 34%);
+  --beige:  hsl(50 100% 76%);
 }
 
 body {
@@ -18,12 +12,12 @@ body {
 }
 
 header {
-  border-bottom: solid var(--gray) 1px;
+  border-bottom: solid var(--silver) 1px;
   font-size: larger;
 }
 
 footer {
-  border-top: solid var(--gray) 1px;
+  border-top: solid var(--silver) 1px;
   font-size: smaller;
 }
 
@@ -36,7 +30,7 @@ figcaption, h1, h2, li, p {
 }
 
 fieldset, input, select, td, th {
-  border: solid var(--gray) 1px;
+  border: solid var(--silver) 1px;
 }
 
 table {
@@ -59,12 +53,7 @@ input, select {
 }
 
 input:focus-visible, select:focus-visible {
-  outline: solid var(--gray) 1px;
-}
-
-input:invalid {
-  background-color: var(--red);
-  color: white;
+  outline: solid var(--silver) 1px;
 }
 
 li {
@@ -78,42 +67,21 @@ math[display="block"] {
 }
 
 canvas.framed, img.framed {
-  border: solid var(--gold) 1px;
+  border: solid var(--pyrite) 1px;
   image-rendering: pixelated;
 }
 
 a {
+  color: var(--brown);
   outline-style: none;
   text-decoration: underline;
 }
 
-a:link {
-  color: var(--blue);
-}
-
-a:link:focus-visible, a:link:hover {
-  background-color: var(--blue);
-  color: white;
-}
-
-a:visited {
-  color: var(--magenta);
-}
-
-a:visited:focus-visible, a:visited:hover {
-  background-color: var(--magenta);
-  color: white;
-}
-
-a:active {
-  color: var(--red);
-}
-
-a:active:focus-visible, a:active:hover {
-  background-color: var(--red);
+a:focus-visible, a:hover {
+  background-color: var(--brown);
   color: white;
 }
 
 ::selection {
-  background-color: var(--silver);
+  background-color: var(--beige);
 }
