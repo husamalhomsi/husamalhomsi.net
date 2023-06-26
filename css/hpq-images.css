@@ -1,3 +1,4 @@
 ul#painters ul {
   font-family: monospace;
+  white-space: nowrap;
 }
