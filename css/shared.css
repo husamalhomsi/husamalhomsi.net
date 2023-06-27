@@ -2,7 +2,7 @@ html {
   --gray:   hsl(0    0% 54%); /* Target contrast ratio on white: 3.5 */
   --brown:  hsl(50 100% 14%); /* Target contrast ratio on white: 11 */
   --pyrite: hsl(50 100% 32%); /* Target contrast ratio on white: 3.5 */
-  --beige:  hsl(50 100% 84%); /* Target contrast ratio on black: 18.5 */
+  --gold:   hsl(50 100% 64%); /* Target contrast ratio on black: 16 */
 }
 
 body {
@@ -83,5 +83,5 @@ a:focus-visible, a:hover {
 }
 
 ::selection {
-  background-color: var(--beige);
+  background-color: var(--gold);
 }
