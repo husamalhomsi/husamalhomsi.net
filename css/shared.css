@@ -1,8 +1,8 @@
 html {
-  --silver: hsl(0    0% 58%);
-  --brown:  hsl(50 100% 20%);
-  --pyrite: hsl(50 100% 34%);
-  --beige:  hsl(50 100% 76%);
+  --gray:   hsl(0    0% 54%); /* Target contrast ratio on white: 3.5 */
+  --brown:  hsl(50 100% 14%); /* Target contrast ratio on white: 11 */
+  --pyrite: hsl(50 100% 32%); /* Target contrast ratio on white: 3.5 */
+  --beige:  hsl(50 100% 84%); /* Target contrast ratio on black: 18.5 */
 }
 
 body {
@@ -12,12 +12,12 @@ body {
 }
 
 header {
-  border-bottom: solid var(--silver) 1px;
+  border-bottom: solid var(--gray) 1px;
   font-size: larger;
 }
 
 footer {
-  border-top: solid var(--silver) 1px;
+  border-top: solid var(--gray) 1px;
   font-size: smaller;
 }
 
@@ -30,7 +30,7 @@ figcaption, h1, h2, li, p {
 }
 
 fieldset, input, select, td, th {
-  border: solid var(--silver) 1px;
+  border: solid var(--gray) 1px;
 }
 
 table {
@@ -53,7 +53,7 @@ input, select {
 }
 
 input:focus-visible, select:focus-visible {
-  outline: solid var(--silver) 1px;
+  outline: solid var(--gray) 1px;
 }
 
 li {
