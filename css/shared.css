@@ -1,8 +1,8 @@
 html {
-  --gray:   hsl(0    0% 54%); /* Target contrast ratio on white: 3.5 */
-  --brown:  hsl(50 100% 14%); /* Target contrast ratio on white: 11 */
-  --pyrite: hsl(50 100% 32%); /* Target contrast ratio on white: 3.5 */
-  --gold:   hsl(50 100% 64%); /* Target contrast ratio on black: 16 */
+  --gray:   hsl(45   0% 54%); /* Target contrast ratio on white: 3.5 */
+  --brown:  hsl(45 100% 15%); /* Target contrast ratio on white: 11 */
+  --pyrite: hsl(45 100% 34%); /* Target contrast ratio on white: 3.5 */
+  --gold:   hsl(45 100% 74%); /* Target contrast ratio on black: 16 */
 }
 
 body {
