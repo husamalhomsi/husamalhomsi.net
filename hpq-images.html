@@ -137,7 +137,7 @@
     <section>
       <h2>Observations</h2>
       <ul>
-        <li>HPQ images are symmetric around the line x = y.
+        <li>HPQ images are symmetric around the line y = x.
         <li>The <a href="https://mathworld.wolfram.com/SierpinskiSieve.html">Sierpiński sieve</a>
         or variations of it seem to occur in painters 0, 5, 6, 20, 21, 25, and 26.
         <li><a href="https://mathworld.wolfram.com/CantorDust.html">Cantor dust</a>
@@ -178,15 +178,8 @@
       <fieldset>
         <legend>Options</legend>
         <p>
-          <label>Painter:
-            <select id="painter">
-              <option>8
-              <option>22
-            </select>
-          </label>
-          <label>Q-argument:
-            <input required id="q" type="number" min="1" max="4294967295" value="1">
-          </label>
+          <label>Painter: <select id="painter"><option>8<option>22</select></label>
+          <label>Q-argument: <input required id="q" type="number" min="1" max="4294967295" value="1"></label>
         </p>
       </fieldset>
       <figure>
@@ -196,121 +189,36 @@
     </section>
     <section id="gallery">
       <h2>Gallery</h2>
-      <p>Here are some images written using hpq-png.
-      They are 256 pixels in width and height.
+      <p>Here are some images written using hpq-png. They are 256 pixels in width and height.
       Their captions show the painter and q-argument used.</p>
-      <figure>
-        <figcaption>p0 q192</figcaption>
-        <img class="framed" src="img/hpq/p0q192x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p1 q192</figcaption>
-        <img class="framed" src="img/hpq/p1q192x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p2 q192</figcaption>
-        <img class="framed" src="img/hpq/p2q192x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p3 q192</figcaption>
-        <img class="framed" src="img/hpq/p3q192x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p4 q192</figcaption>
-        <img class="framed" src="img/hpq/p4q192x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p5 q19</figcaption>
-        <img class="framed" src="img/hpq/p5q19x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p6 q19</figcaption>
-        <img class="framed" src="img/hpq/p6q19x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p7 q19</figcaption>
-        <img class="framed" src="img/hpq/p7q19x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p8 q19</figcaption>
-        <img class="framed" src="img/hpq/p8q19x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p9 q19</figcaption>
-        <img class="framed" src="img/hpq/p9q19x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p10 q4096</figcaption>
-        <img class="framed" src="img/hpq/p10q4096x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p11 q4096</figcaption>
-        <img class="framed" src="img/hpq/p11q4096x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p12 q4096</figcaption>
-        <img class="framed" src="img/hpq/p12q4096x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p13 q4096</figcaption>
-        <img class="framed" src="img/hpq/p13q4096x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p14 q1048576</figcaption>
-        <img class="framed" src="img/hpq/p14q1048576x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p18 q136</figcaption>
-        <img class="framed" src="img/hpq/p18q136x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p21 q223</figcaption>
-        <img class="framed" src="img/hpq/p21q223x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p22 q2040</figcaption>
-        <img class="framed" src="img/hpq/p22q2040x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p25 q136</figcaption>
-        <img class="framed" src="img/hpq/p25q136x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p26 q15</figcaption>
-        <img class="framed" src="img/hpq/p26q15x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p27 q15</figcaption>
-        <img class="framed" src="img/hpq/p27q15x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p29 q4097</figcaption>
-        <img class="framed" src="img/hpq/p29q4097x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p30 q2064</figcaption>
-        <img class="framed" src="img/hpq/p30q2064x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p32 q224</figcaption>
-        <img class="framed" src="img/hpq/p32q224x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p35 q20</figcaption>
-        <img class="framed" src="img/hpq/p35q20x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p36 q15</figcaption>
-        <img class="framed" src="img/hpq/p36q15x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p37 q15</figcaption>
-        <img class="framed" src="img/hpq/p37q15x0y0w256h256.hpq.png">
-      </figure>
-      <figure>
-        <figcaption>p39 q1048577</figcaption>
-        <img class="framed" src="img/hpq/p39q1048577x0y0w256h256.hpq.png">
-      </figure>
+      <figure><figcaption>p0 q192</figcaption><img class="framed" src="img/hpq/p0q192x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p1 q192</figcaption><img class="framed" src="img/hpq/p1q192x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p2 q192</figcaption><img class="framed" src="img/hpq/p2q192x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p3 q192</figcaption><img class="framed" src="img/hpq/p3q192x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p4 q192</figcaption><img class="framed" src="img/hpq/p4q192x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p5 q19</figcaption><img class="framed" src="img/hpq/p5q19x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p6 q19</figcaption><img class="framed" src="img/hpq/p6q19x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p7 q19</figcaption><img class="framed" src="img/hpq/p7q19x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p8 q19</figcaption><img class="framed" src="img/hpq/p8q19x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p9 q19</figcaption><img class="framed" src="img/hpq/p9q19x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p10 q4096</figcaption><img class="framed" src="img/hpq/p10q4096x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p11 q4096</figcaption><img class="framed" src="img/hpq/p11q4096x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p12 q4096</figcaption><img class="framed" src="img/hpq/p12q4096x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p13 q4096</figcaption><img class="framed" src="img/hpq/p13q4096x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p14 q1048576</figcaption><img class="framed" src="img/hpq/p14q1048576x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p18 q136</figcaption><img class="framed" src="img/hpq/p18q136x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p21 q223</figcaption><img class="framed" src="img/hpq/p21q223x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p22 q2040</figcaption><img class="framed" src="img/hpq/p22q2040x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p25 q136</figcaption><img class="framed" src="img/hpq/p25q136x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p26 q15</figcaption><img class="framed" src="img/hpq/p26q15x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p27 q15</figcaption><img class="framed" src="img/hpq/p27q15x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p29 q4097</figcaption><img class="framed" src="img/hpq/p29q4097x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p30 q2064</figcaption><img class="framed" src="img/hpq/p30q2064x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p32 q224</figcaption><img class="framed" src="img/hpq/p32q224x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p35 q20</figcaption><img class="framed" src="img/hpq/p35q20x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p36 q15</figcaption><img class="framed" src="img/hpq/p36q15x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p37 q15</figcaption><img class="framed" src="img/hpq/p37q15x0y0w256h256.hpq.png"></figure>
+      <figure><figcaption>p39 q1048577</figcaption><img class="framed" src="img/hpq/p39q1048577x0y0w256h256.hpq.png"></figure>
     </section>
   </main>
   <footer>
