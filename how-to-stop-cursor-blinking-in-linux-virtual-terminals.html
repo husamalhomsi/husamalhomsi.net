@@ -12,8 +12,12 @@
   </header>
   <main>
     <h1>How to Stop Cursor Blinking in Linux Virtual Terminals</h1>
-    <p>In Linux virtual terminals, the cursor may blink by default, which may be distracting and annoying.
-    This tutorial explains one method for stopping the blinking.</p>
+    <p>In Linux virtual terminals, the cursor may blink by default. This may be distracting and annoying.</p>
+    <p>On Linux systems, the file <b>/sys/class/graphics/fbcon/cursor_blink</b> contains a number.
+    Wether the number is 1 or 0 determines whether the cursor blinks or not, respectively.
+    The file requires root's permission to be written, and its contents are reset at reboot.
+    Setting the contents to 0 at reboot should stop the blinking.
+    Here I will explain a method for doing this.</p>
     <section>
       <h2>Prerequisites</h2>
       <p>Your crontab files must support <b>@reboot</b>, and your CRONTAB(5) manual page should say this.
@@ -21,11 +25,7 @@
       <figure><kbd>man 5 crontab</kbd></figure>
     </section>
     <section>
-      <h2>Tutorial</h2>
-      <p>The file <b>/sys/class/graphics/fbcon/cursor_blink</b> contains a number.
-      Wether the number is 1 or 0 determines whether the cursor blinks or not, respectively.
-      The file requires root's permission to be written, and its contents are reset at reboot.
-      Here is how to stop the blinking by setting the contents to 0 at reboot:</p>
+      <h2>Method</h2>
       <ol>
         <li>Open a terminal.
         <li>Log in as root by executing
@@ -40,10 +40,10 @@
     </section>
     <section>
       <h2>Testing</h2>
-      <p>To test the method, reboot then open a virtual terminal. The cursor should not be blinking.</p>
+      <p>The next time you reboot, the cursor should not blink.</p>
     </section>
   </main>
   <footer>
-    <p><small>This page was last changed in 2023-04.</small></p>
+    <p><small>This page was last changed in 2023-07.</small></p>
   </footer>
 </html>
