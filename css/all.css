@@ -66,11 +66,6 @@ math[display="block"] {
   margin-bottom: 1em;
 }
 
-canvas.framed, img.framed {
-  border: solid var(--pyrite) 1px;
-  image-rendering: pixelated;
-}
-
 a {
   color: var(--brown);
   outline-style: none;
