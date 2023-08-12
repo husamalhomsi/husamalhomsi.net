@@ -1,0 +1,16 @@
+<?xml version='1.0'?>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12' width='252px' height='216px' fill='white'>
+  <rect x='0' y='0' width='100%' height='100%' fill='black'/>
+  <!-- Daughter -->
+  <circle r='0.5' cx='2' cy='6.5'/>
+  <polygon points='1.5,7.25 2.5,7.25 3,9 2.5,9 2.5,11 1.5,11 1.5,9 1,9'/>
+  <!-- Father -->
+  <circle r='1' cx='5' cy='2'/>
+  <polygon points='3,3.5 7,3.5 6,7 6,11 4,11 4,7'/>
+  <!-- Mother -->
+  <circle r='1' cx='9' cy='2'/>
+  <polygon points='8,3.5 10,3.5 11,7 10,7 10,11 8,11 8,7 7,7'/>
+  <!-- Son -->
+  <circle r='0.5' cx='12' cy='6.5'/>
+  <polygon points='11,7.25 13,7.25 12.5,9 12.5,11 11.5,11 11.5,9'/>
+</svg>
