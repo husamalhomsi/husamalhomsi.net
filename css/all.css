@@ -26,6 +26,7 @@ footer small {
 }
 
 figcaption, h1, h2, h3, li, p {
+  line-height: 1.5;
   max-width: 43rem;
 }
 
