@@ -16,28 +16,21 @@
     <p>On Linux systems, the file <b>/sys/class/graphics/fbcon/cursor_blink</b> contains a number.
     Wether the number is 1 or 0 determines whether the cursor blinks or not, respectively.
     The file requires root's permission to be written, and its contents are reset at reboot.
-    Setting the contents to 0 at reboot should stop the blinking.
-    Here I will explain a method for doing this.</p>
-    <section>
-      <h2>Method</h2>
-      <ol>
-        <li>Open a terminal.
-        <li>Log in as root by executing
-          <figure><kbd>su -l root</kbd></figure>
-        <li>Create a shell script that stops the blinking by executing
-          <figure><kbd>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
-        <li>Edit root's crontab file by executing
-          <figure><kbd>crontab -e</kbd></figure>
-        <li>Schedule the script to be executed at reboot by adding to the file a line that says
-          <figure><kbd>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
-      </ol>
-    </section>
-    <section>
-      <h2>Testing</h2>
-      <p>The next time you reboot, the cursor should not blink.</p>
-    </section>
+    Setting the contents to 0 at reboot should stop the blinking. Here is how to do that:</p>
+    <ol>
+      <li>Open a terminal.
+      <li>Log in as root by executing
+        <figure><kbd>su -l root</kbd></figure>
+      <li>Create a shell script that stops the blinking by executing
+        <figure><kbd>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
+      <li>Edit root's crontab file by executing
+        <figure><kbd>crontab -e</kbd></figure>
+      <li>Schedule the script to be executed at reboot by adding to the file a line that says
+        <figure><kbd>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
+    </ol>
+    <p>The next time you reboot, the cursor should not blink.</p>
   </main>
   <footer>
-    <p><small>This page was last changed in 2023-08.</small></p>
+    <p><small>This page was last changed in 2023-10.</small></p>
   </footer>
 </html>
