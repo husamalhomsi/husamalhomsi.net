@@ -1,5 +1,5 @@
 canvas.framed, img.framed {
-  border: solid var(--pyrite) 1px;
+  border: solid var(--red2) 1px;
   image-rendering: pixelated;
 }
 

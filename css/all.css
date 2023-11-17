@@ -1,8 +1,8 @@
 html {
-  --gray:   hsl(45   0% 49%); /* Contrast ratio on white >= 4 */
-  --brown:  hsl(45 100% 22%); /* Contrast ratio on white >= 7 */
-  --pyrite: hsl(45 100% 31%); /* Contrast ratio on white >= 4 */
-  --gold:   hsl(45 100% 75%); /* Contrast ratio on black >= 16 */
+  --gray: hsl(0  0% 49%); /* Contrast ratio on white >= 4 */
+  --red1: hsl(0 60% 37%); /* Contrast ratio on white >= 8 */
+  --red2: hsl(0 60% 58%); /* Contrast ratio on white >= 4 */
+  --red3: hsl(0 60% 83%); /* Contrast ratio on black >= 12 */
 }
 
 body {
@@ -68,16 +68,16 @@ math[display="block"] {
 }
 
 a {
-  color: var(--brown);
+  color: var(--red1);
   outline-style: none;
   text-decoration: underline;
 }
 
 a:focus-visible, a:hover {
-  background-color: var(--brown);
+  background-color: var(--red1);
   color: white;
 }
 
 ::selection {
-  background-color: var(--gold);
+  background-color: var(--red3);
 }
