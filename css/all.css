@@ -1,8 +1,7 @@
 html {
   --gray: hsl(0  0% 49%); /* Contrast ratio on white >= 4 */
-  --red1: hsl(0 60% 37%); /* Contrast ratio on white >= 8 */
-  --red2: hsl(0 60% 58%); /* Contrast ratio on white >= 4 */
-  --red3: hsl(0 60% 83%); /* Contrast ratio on black >= 12 */
+  --red1: hsl(0 60% 58%); /* Contrast ratio on white >= 4 */
+  --red2: hsl(0 60% 40%); /* Contrast ratio on white >= 7 */
 }
 
 body {
@@ -12,12 +11,12 @@ body {
 }
 
 header {
-  border-bottom: solid var(--gray) 1px;
+  border-bottom: solid 1px var(--gray);
   font-size: larger;
 }
 
 footer {
-  border-top: solid var(--gray) 1px;
+  border-top: solid 1px var(--gray);
   font-size: smaller;
 }
 
@@ -30,8 +29,13 @@ figcaption, h1, h2, h3, li, p {
   max-width: 43rem;
 }
 
+figure.command {
+  border-left: solid 4px var(--red1);
+  padding-left: 0.5em;
+}
+
 fieldset, input, select, td, th {
-  border: solid var(--gray) 1px;
+  border: solid 1px var(--gray);
 }
 
 table {
@@ -68,16 +72,12 @@ math[display="block"] {
 }
 
 a {
-  color: var(--red1);
+  color: var(--red2);
   outline-style: none;
   text-decoration: underline;
 }
 
-a:focus-visible, a:hover {
-  background-color: var(--red1);
+a:focus-visible, a:hover, ::selection {
+  background-color: var(--red2);
   color: white;
-}
-
-::selection {
-  background-color: var(--red3);
 }
