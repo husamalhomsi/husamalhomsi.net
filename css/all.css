@@ -1,7 +1,7 @@
 html {
+  --red1: hsl(0 60% 40%); /* Contrast ratio on white >= 7 */
+  --red2: hsl(0 60% 58%); /* Contrast ratio on white >= 4 */
   --gray: hsl(0  0% 49%); /* Contrast ratio on white >= 4 */
-  --red1: hsl(0 60% 58%); /* Contrast ratio on white >= 4 */
-  --red2: hsl(0 60% 40%); /* Contrast ratio on white >= 7 */
 }
 
 body {
@@ -30,7 +30,7 @@ figcaption, h1, h2, h3, li, p {
 }
 
 figure.command {
-  border-left: solid 4px var(--red1);
+  border-left: solid 4px var(--red2);
   padding-left: 0.5em;
 }
 
@@ -72,12 +72,12 @@ math[display="block"] {
 }
 
 a {
-  color: var(--red2);
+  color: var(--red1);
   outline-style: none;
   text-decoration: underline;
 }
 
 a:focus-visible, a:hover, ::selection {
-  background-color: var(--red2);
+  background-color: var(--red1);
   color: white;
 }
