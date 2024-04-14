@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <meta name="author" content="Sawuare">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/math-images.css">
+  <title>Wafer</title>
+  <header>
+    <p><a href="/">Sawuare's Site</a></p>
+  </header>
+  <main>
+    <h1>Wafer</h1>
+    <p>Wafer is a library for writing 8-bit PCM WAVE files. It is written in C and consists of a single header:
+    <a href="https://github.com/Sawuare/misk/blob/main/src/wafer.h">wafer.h</a>. It is part of <a href="misk">misk</a>.</p>
+    <p>Here is an example of using wafer to write an audio file that has 1 channel and 44100 samples per second:</p>
+    <figure class="command"><pre>#include "wafer.h"
+
+#define Q 8160
+#define L 256
+
+int main(void) {
+  uint8_t audio[L * L];
+
+  for (int y = 0; y < L; ++y)
+    for (int x = 0; x < L; ++x)
+      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 64 : 192;
+
+  wafer_file *file = wafer_open("wafer-example.wav");
+  wafer_set_channels(file, 1);
+  wafer_set_samples_per_sec(file, 44100);
+  wafer_write_metadata(file);
+  wafer_write_data(audio, sizeof audio, file);
+  wafer_close(file);
+}
+</pre></figure>
+    <p>Here is the audio file:</p>
+    <figure><audio controls loop src="audio/wafer-example.wav"></audio></figure>
+    <p>Fun fact: Each sample in the audio file corresponds to a pixel in the following <a href="hpq-images">HPQ image</a>.
+    From top to bottom and left to right, a white pixel corresponds to a sample with amplitude 192, and a black pixel
+    corresponds to a sample with amplitude 64:</p>
+    <figure><img class="framed" src="img/wafer-example.png"></figure>
+  </main>
+  <footer>
+    <p><small>This page was last changed in 2024-04.</small></p>
+  </footer>
+</html>
