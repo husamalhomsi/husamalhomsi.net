@@ -12,7 +12,7 @@ int main(void) {
 
   wafer_file *file = wafer_open("wafer-example.wav");
   wafer_set_channels(file, 1);
-  wafer_set_samples_per_sec(file, 44100);
+  wafer_set_samples_per_sec(file, 22050);
   wafer_write_metadata(file);
   wafer_write_data(audio, sizeof audio, file);
   wafer_close(file);
