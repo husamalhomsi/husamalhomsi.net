@@ -2,6 +2,10 @@ body {
   background-color: white;
   color: black;
   font-family: sans-serif;
+  line-height: 1.5;
+  margin: 8px auto;
+  max-width: 43em;
+  padding: 0 8px;
 }
 
 header {
@@ -18,13 +22,8 @@ footer small {
   font-size: inherit;
 }
 
-figcaption, h1, h2, h3, li, p {
-  line-height: 1.5;
-  max-width: 43rem;
-}
-
 figure.command {
-  border-left: solid 4px black;
+  border-left: solid 2px black;
   padding-left: 0.5em;
 }
 
