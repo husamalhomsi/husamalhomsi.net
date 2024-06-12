@@ -8,7 +8,7 @@ int main(void) {
 
   for (int y = 0; y < L; ++y)
     for (int x = 0; x < L; ++x)
-      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 64 : 192;
+      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 0 : 255;
 
   wafer_file *file = wafer_open("wafer-example.wav");
   wafer_set_channels(file, 1);

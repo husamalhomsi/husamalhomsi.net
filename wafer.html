@@ -26,7 +26,7 @@ int main(void) {
 
   for (int y = 0; y < L; ++y)
     for (int x = 0; x < L; ++x)
-      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 64 : 192;
+      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 0 : 255;
 
   wafer_file *file = wafer_open("wafer-example.wav");
   wafer_set_channels(file, 1);
@@ -36,14 +36,14 @@ int main(void) {
   wafer_close(file);
 }
 </pre></figure>
-    <p>Here is the audio file:</p>
+    <p>Here is the audio file, which is <strong>very loud</strong>:</p>
     <figure><audio controls src="audio/wafer-example.wav"></audio></figure>
     <p>Fun fact: Each sample in the audio file corresponds to a pixel in the following <a href="hpq-images">HPQ image</a>.
-    From top to bottom and left to right, a white pixel corresponds to a sample with amplitude 192, and a black pixel
-    corresponds to a sample with amplitude 64:</p>
+    From top to bottom and left to right, a white pixel corresponds to a sample with amplitude 255, and a black pixel
+    corresponds to a sample with amplitude 0:</p>
     <figure><img class="framed" src="img/wafer-example.png"></figure>
   </main>
   <footer>
-    <p><small>This page was last changed in 2024-04.</small></p>
+    <p><small>This page was last changed in 2024-06.</small></p>
   </footer>
 </html>
