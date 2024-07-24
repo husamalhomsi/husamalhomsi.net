@@ -1,5 +1,9 @@
 #! /bin/sh
 
+set -e
+
+cd ../img/hxy/
+
 hxy -z -l 256
 hxy -z -l 251
 

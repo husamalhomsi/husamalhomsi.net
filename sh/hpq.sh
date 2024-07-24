@@ -1,5 +1,9 @@
 #! /bin/sh
 
+set -e
+
+cd ../img/hpq/
+
 hpq-png -z -p 0 -q 192
 hpq-png -z -p 1 -q 192
 hpq-png -z -p 2 -q 192
