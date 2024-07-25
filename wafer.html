@@ -16,7 +16,9 @@
     <p>Wafer is a library for writing 8-bit PCM WAVE files. It is written in C and consists of a single header:
     <a href="https://github.com/Sawuare/misk/blob/main/src/wafer.h">wafer.h</a>. It is part of <a href="misk">Misk</a>.</p>
     <p>Here is an example of using Wafer to write an audio file that has 1 channel and 22050 samples per second:</p>
-    <figure class="command"><pre>#include "wafer.h"
+    <figure class="command">
+      <pre>
+#include "wafer.h"
 
 #define Q 8160
 #define L 256
@@ -35,7 +37,8 @@ int main(void) {
   wafer_write_data(audio, sizeof audio, file);
   wafer_close(file);
 }
-</pre></figure>
+</pre>
+    </figure>
     <p>Here is the audio file, which is <strong>very loud</strong>:</p>
     <figure><audio controls src="audio/wafer-example.wav"></audio></figure>
     <p><b>Fun fact:</b> Each sample in the audio file corresponds to a pixel in the following <a href="hpq-images">HPQ image</a>.
@@ -44,7 +47,7 @@ int main(void) {
     <figure><img class="framed" src="img/wafer-example.png"></figure>
   </main>
   <footer>
-    <p><small>This page was last modified on 2024-07-07. The image on this page is licensed under
+    <p><small>This page was last modified on 2024-07-24. The image on this page is licensed under
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
   </footer>
 </html>
