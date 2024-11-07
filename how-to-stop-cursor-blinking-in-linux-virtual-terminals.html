@@ -12,20 +12,20 @@
   </header>
   <main>
     <h1>How to Stop Cursor Blinking in Linux Virtual Terminals</h1>
-    <p>In Linux virtual terminals, the cursor may blink by default. This may be distracting and annoying.</p>
-    <p>On Linux systems, the file <b>/sys/class/graphics/fbcon/cursor_blink</b> contains a number.
-    Wether the number is 1 or 0 determines whether the cursor blinks or not, respectively.
+    <p>In Linux virtual terminals, the cursor may blink by default. This can be distracting.</p>
+    <p>On Linux systems, the file /sys/class/graphics/fbcon/cursor_blink contains a number.
+    Whether the number is 1 or 0 determines whether the cursor blinks or not.
     The file requires root's permission to be written, and its contents are reset at reboot.
     Setting the contents to 0 at reboot should stop the blinking. Here is how to do that:</p>
     <ol>
       <li>Open a terminal.
-      <li>Log in as root by executing
+      <li>Log in as root by running
         <figure class="command"><kbd>su -l root</kbd></figure>
-      <li>Create a shell script that stops the blinking by executing
+      <li>Create a shell script that stops the blinking by running
         <figure class="command"><kbd>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
-      <li>Edit root's crontab file by executing
+      <li>Edit root's crontab file by running
         <figure class="command"><kbd>crontab -e</kbd></figure>
-      <li>Schedule the script to be executed at reboot by adding to the file a line that says
+      <li>Schedule the script to be run at reboot by adding to the file a line that says
         <figure class="command"><kbd>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</kbd></figure>
     </ol>
     <p>The next time you reboot, the cursor should not blink.</p>
