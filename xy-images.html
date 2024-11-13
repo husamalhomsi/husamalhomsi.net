@@ -7,31 +7,31 @@
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="css/math-images.css">
-  <title>HXY Images</title>
+  <title>XY Images</title>
   <header>
     <p><a href="/">Husam's Site</a></p>
   </header>
   <main>
-    <h1>HXY Images</h1>
-    <p>HXY images are a kind of mathematical art. I discovered them circa 2020.</p>
+    <h1>XY Images</h1>
+    <p>XY images are a kind of mathematical art. I discovered them circa 2020.</p>
     <section>
       <h2>Software</h2>
       <ul>
-        <li><a href="https://github.com/Sawuare/misk/blob/main/src/hxy.c">hxy</a> - write an HXY image to a PNG file
+        <li><a href="https://github.com/Sawuare/misk/blob/main/src/xy-png.c">xy-png</a> - write an XY image to a PNG file
       </ul>
       <p>This program is part of <a href="misk">Misk</a>.</p>
     </section>
     <section>
       <h2>Definition</h2>
       <p>Let &naturals; be the set of all nonnegative integers.
-      For an HXY image with width w and height h, in pixels, w, h &in; &naturals; &setminus; {0},
+      For an XY image with width w and height h, in pixels, w, h &in; &naturals; &setminus; {0},
       let X = {x &in; &naturals; &mid; x &lt; w}, Y = {y &in; &naturals; &mid; y &lt; h}, and P = {x &sdot; y &mid; x &in; X, y &in; Y}.
       Number the pixels 0, 1, &hellip; from top to bottom and left to right.
       A pixel is white if its number is in P, otherwise it is black.</p>
     </section>
     <section>
       <h2>Example</h2>
-      <p>For the HXY image with width w = 3 and height h = 2, the sets defined above become:</p>
+      <p>For the XY image with width w = 3 and height h = 2, the sets defined above become:</p>
       <ul>
         <li>X = {0, 1, 2}
         <li>Y = {0, 1}
@@ -52,7 +52,7 @@
     <section>
       <h2>Observations</h2>
       <ul>
-        <li>The top row of an HXY image is white if
+        <li>The top row of an XY image is white if
           <ul>
             <li>the width and height are equal to 1 or
             <li>the height is greater than 1.
@@ -63,26 +63,26 @@
     </section>
     <section class="inline-block-figures">
       <h2>Gallery</h2>
-      <p>Here are some images written using hxy.</p>
+      <p>Here are some images written using xy-png.</p>
       <figure>
-        <figcaption>Figure 1. The square HXY images with side lengths 256 and 251.</figcaption>
-        <img class="framed" src="img/hxy/w256h256.hxy.png">
-        <img class="framed" src="img/hxy/w251h251.hxy.png">
+        <figcaption>Figure 1. The square XY images with side lengths 256 and 251.</figcaption>
+        <img class="framed" src="img/xy/w256h256.xy.png">
+        <img class="framed" src="img/xy/w251h251.xy.png">
       </figure>
       <figure>
         <figcaption>Figure 2. The special shapes of Figure 1.</figcaption>
-        <img class="framed" src="img/hxy/w256h256s.hxy.png">
-        <img class="framed" src="img/hxy/w251h251s.hxy.png">
+        <img class="framed" src="img/xy/w256h256s.xy.png">
+        <img class="framed" src="img/xy/w251h251s.xy.png">
       </figure>
       <figure>
         <figcaption>Figure 3. The horizontal projections of Figure 1.</figcaption>
-        <img class="framed" src="img/hxy/w256h256H.hxy.png">
-        <img class="framed" src="img/hxy/w251h251H.hxy.png">
+        <img class="framed" src="img/xy/w256h256H.xy.png">
+        <img class="framed" src="img/xy/w251h251H.xy.png">
       </figure>
       <figure>
         <figcaption>Figure 4. The vertical projections of Figure 1.</figcaption>
-        <img class="framed" src="img/hxy/w256h256V.hxy.png">
-        <img class="framed" src="img/hxy/w251h251V.hxy.png">
+        <img class="framed" src="img/xy/w256h256V.xy.png">
+        <img class="framed" src="img/xy/w251h251V.xy.png">
       </figure>
       <p>To see the relationship between Figure 1 and Figure 2, use a graphics editor to:</p>
       <ol>
@@ -93,7 +93,7 @@
     </section>
   </main>
   <footer>
-    <p><small>This page was last modified on 2024-11-06. The images on this page are licensed under
+    <p><small>This page was last modified on 2024-11-13. The images on this page are licensed under
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
   </footer>
 </html>
