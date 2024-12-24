@@ -1,5 +1,5 @@
 <?xml version='1.0'?>
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12' height='256px' fill='white'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 12' width='299px' height='256px' fill='white'>
   <rect x='0' y='0' width='100%' height='100%' fill='black'/>
   <!-- Daughter -->
   <circle r='0.5' cx='2' cy='6.5'/>
