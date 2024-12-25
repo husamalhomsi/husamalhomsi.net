@@ -1,6 +1,5 @@
 canvas.framed, img.framed {
-  border: solid 1px black;
-  image-rendering: pixelated;
+  border: solid black 1px;
 }
 
 table.image td {
