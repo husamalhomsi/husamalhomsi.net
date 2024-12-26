@@ -22,7 +22,7 @@ footer small {
   font-size: inherit;
 }
 
-img {
+canvas, img {
   image-rendering: pixelated;
   max-width: 100%;
 }
@@ -49,13 +49,14 @@ fieldset {
 }
 
 input, select {
+  background-color: white;
   border-radius: 0;
   color: inherit;
   font-family: inherit;
   font-size: inherit;
 }
 
-input:focus-visible, select:focus-visible {
+input:focus, select:focus {
   outline: solid black 1px;
 }
 
@@ -75,7 +76,7 @@ a {
   text-decoration: underline;
 }
 
-a:focus-visible, a:hover, ::selection {
+a:focus, a:hover, ::selection {
   background-color: black;
   color: white;
 }
