@@ -20,13 +20,13 @@
     <ol>
       <li>Open a terminal.
       <li>Log in as root by running
-        <figure><pre>su -l root</pre></figure>
+        <pre>su -l root</pre>
       <li>Create a shell script that stops the blinking by running
-        <figure><pre>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</pre></figure>
+        <pre>echo "echo 0 > /sys/class/graphics/fbcon/cursor_blink" > stop-cursor-blinking-in-linux-virtual-terminals.sh</pre>
       <li>Edit root's crontab file by running
-        <figure><pre>crontab -e</pre></figure>
+        <pre>crontab -e</pre>
       <li>Schedule the script to be run at reboot by adding to the file a line that says
-        <figure><pre>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</pre></figure>
+        <pre>@reboot sh /root/stop-cursor-blinking-in-linux-virtual-terminals.sh</pre>
     </ol>
     <p>The next time you reboot, the cursor should not blink.</p>
   </main>
