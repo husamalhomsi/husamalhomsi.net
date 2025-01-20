@@ -23,6 +23,7 @@ footer small {
 }
 
 canvas, img {
+  height: auto;
   image-rendering: pixelated;
   max-width: 100%;
 }
