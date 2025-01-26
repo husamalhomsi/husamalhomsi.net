@@ -18,10 +18,6 @@ footer {
   font-size: smaller;
 }
 
-footer small {
-  font-size: inherit;
-}
-
 canvas, img {
   height: auto;
   image-rendering: pixelated;

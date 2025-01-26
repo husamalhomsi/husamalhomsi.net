@@ -15,34 +15,31 @@
     }
   </style>
   <title>Elementary Cellular Automata</title>
-  <header>
-    <p><a href="/">Husam Alhomsi</a></p>
-  </header>
-  <main>
-    <h1>Elementary Cellular Automata</h1>
-    <p><i>This page is a work in progress.</i></p>
-    <section>
-      <h2>Software</h2>
-      <ul>
-        <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-png.c">eca-png.c</a> - write an elementary cellular automaton to a PNG file
-        <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-txt.c">eca-txt.c</a> - print an elementary cellular automaton
-        <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-wav.c">eca-wav.c</a> - write an audio elementary cellular automaton to a WAVE file
-        <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca.h">eca.h</a> - library for elementary cellular automata
-      </ul>
-      <p>These programs and libraries are part of <a href="misk">Misk</a>.</p>
-    </section>
-    <section>
-      <h2>As text</h2>
-      <figure>
-        <figcaption><kbd>eca-txt -r 18 -t</kbd></figcaption>
-        <pre>
+  <header><p><a href="/">Husam Alhomsi</a></p></header>
+  <h1>Elementary Cellular Automata</h1>
+  <p><i>This page is a work in progress.</i></p>
+  <section>
+    <h2>Software</h2>
+    <ul>
+      <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-png.c">eca-png.c</a> - write an elementary cellular automaton to a PNG file
+      <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-txt.c">eca-txt.c</a> - print an elementary cellular automaton
+      <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca-wav.c">eca-wav.c</a> - write an audio elementary cellular automaton to a WAVE file
+      <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/eca.h">eca.h</a> - library for elementary cellular automata
+    </ul>
+    <p>These programs and libraries are part of <a href="misk">Misk</a>.</p>
+  </section>
+  <section>
+    <h2>As text</h2>
+    <figure>
+      <figcaption><kbd>eca-txt -r 18 -t</kbd></figcaption>
+      <pre>
 ███ ██░ █░█ █░░ ░██ ░█░ ░░█ ░░░
  ░   ░   ░   █   ░   ░   █   ░
 </pre>
-      </figure>
-      <figure>
-        <figcaption><kbd>eca-txt -r 18 -c 31 -g 16</kbd></figcaption>
-        <pre>
+    </figure>
+    <figure>
+      <figcaption><kbd>eca-txt -r 18 -c 31 -g 16</kbd></figcaption>
+      <pre>
 ░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░░█░█░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░█░░░█░░░░░░░░░░░░░
@@ -60,10 +57,10 @@
 ░█░░░█░░░█░░░█░░░█░░░█░░░█░░░█░
 █░█░█░█░█░█░█░█░█░█░█░█░█░█░█░█
 </pre>
-      </figure>
-      <figure>
-        <figcaption><kbd>eca-txt -r 18 -c 31 -g 16 -a ">" -d " "</kbd></figcaption>
-        <pre>
+    </figure>
+    <figure>
+      <figcaption><kbd>eca-txt -r 18 -c 31 -g 16 -a ">" -d " "</kbd></figcaption>
+      <pre>
                >               
               > >              
              >   >             
@@ -81,37 +78,34 @@
  >   >   >   >   >   >   >   > 
 > > > > > > > > > > > > > > > >
 </pre>
-      </figure>
-    </section>
-    <section>
-      <h2>As images</h2>
-      <figure>
-        <figcaption><kbd>eca-png -r 18 -c 512 -g 256</kbd></figcaption>
-        <img width="512" height="256" class="framed" src="img/eca/r18s0c512g256.eca.png">
-      </figure>
-      <figure>
-        <figcaption><kbd>eca-png -r 30 -c 512 -g 256</kbd></figcaption>
-        <img width="512" height="256" class="framed" src="img/eca/r30s0c512g256.eca.png">
-      </figure>
-    </section>
-    <section>
-      <h2>As audio</h2>
-      <figure>
-        <figcaption><kbd>eca-wav -r 18 -c 512 -g 256</kbd></figcaption>
-        <audio controls src="audio/eca/r18s0c512g256.eca.wav"></audio>
-      </figure>
-      <figure>
-        <figcaption><kbd>eca-wav -r 30 -c 512 -g 256</kbd></figcaption>
-        <audio controls src="audio/eca/r30s0c512g256.eca.wav"></audio>
-      </figure>
-      <p>eca-wav uses <a href="wafer">Wafer</a> to write audio files.</p>
-    </section>
-    <section>
-      <h2>As random number generators</h2>
-      <p>&hellip;</p>
-    </section>
-  </main>
-  <footer>
-    <p><small>This page was last modified in 2025.</small></p>
-  </footer>
+    </figure>
+  </section>
+  <section>
+    <h2>As images</h2>
+    <figure>
+      <figcaption><kbd>eca-png -r 18 -c 512 -g 256</kbd></figcaption>
+      <img width="512" height="256" class="framed" src="img/eca/r18s0c512g256.eca.png">
+    </figure>
+    <figure>
+      <figcaption><kbd>eca-png -r 30 -c 512 -g 256</kbd></figcaption>
+      <img width="512" height="256" class="framed" src="img/eca/r30s0c512g256.eca.png">
+    </figure>
+  </section>
+  <section>
+    <h2>As audio</h2>
+    <figure>
+      <figcaption><kbd>eca-wav -r 18 -c 512 -g 256</kbd></figcaption>
+      <audio controls src="audio/eca/r18s0c512g256.eca.wav"></audio>
+    </figure>
+    <figure>
+      <figcaption><kbd>eca-wav -r 30 -c 512 -g 256</kbd></figcaption>
+      <audio controls src="audio/eca/r30s0c512g256.eca.wav"></audio>
+    </figure>
+    <p>eca-wav uses <a href="wafer">Wafer</a> to write audio files.</p>
+  </section>
+  <section>
+    <h2>As random number generators</h2>
+    <p>&hellip;</p>
+  </section>
+  <footer><p>This page was last modified in 2025.</p></footer>
 </html>

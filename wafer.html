@@ -6,16 +6,13 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/images.css">
   <title>Wafer</title>
-  <header>
-    <p><a href="/">Husam Alhomsi</a></p>
-  </header>
-  <main>
-    <h1>Wafer</h1>
-    <p>Wafer is a library for writing 8-bit PCM WAVE files. It is written in C and consists of a single header:
-    <a href="https://github.com/husamalhomsi/misk/blob/main/src/wafer.h">wafer.h</a>.
-    It is part of <a href="misk">Misk</a>. It is simple, efficient, and easy to use.</p>
-    <p>Here is an example of using Wafer to write an audio file that has 1 channel and 22050 samples per second:</p>
-    <pre>
+  <header><p><a href="/">Husam Alhomsi</a></p></header>
+  <h1>Wafer</h1>
+  <p>Wafer is a library for writing 8-bit PCM WAVE files. It is written in C and consists of a single header:
+  <a href="https://github.com/husamalhomsi/misk/blob/main/src/wafer.h">wafer.h</a>.
+  It is part of <a href="misk">Misk</a>. It is simple, efficient, and easy to use.</p>
+  <p>Here is an example of using Wafer to write an audio file that has 1 channel and 22050 samples per second:</p>
+  <pre>
 #include "wafer.h"
 
 #define L 256
@@ -36,18 +33,15 @@ int main(void) {
   wafer_close(file);
 }
 </pre>
-    <p>Here is the audio file, which is <strong>very loud</strong>:</p>
-    <figure><audio controls src="audio/wafer-example.wav"></audio></figure>
-    <p><b>Fun fact:</b> Each sample in the audio file corresponds to a pixel in the following <a href="pq-images">PQ image</a>.
-    From top to bottom and left to right, a white pixel corresponds to a sample with amplitude 255, and a black pixel
-    corresponds to a sample with amplitude 0:</p>
-    <figure>
-      <figcaption>p32 q8160</figcaption>
-      <img class="framed" width="256" height="256" src="img/wafer-example.png">
-    </figure>
-  </main>
-  <footer>
-    <p><small>This page was last modified in 2025. The image on this page is licensed under
-    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-  </footer>
+  <p>Here is the audio file, which is <strong>very loud</strong>:</p>
+  <figure><audio controls src="audio/wafer-example.wav"></audio></figure>
+  <p><b>Fun fact:</b> Each sample in the audio file corresponds to a pixel in the following <a href="pq-images">PQ image</a>.
+  From top to bottom and left to right, a white pixel corresponds to a sample with amplitude 255, and a black pixel
+  corresponds to a sample with amplitude 0:</p>
+  <figure>
+    <figcaption>p32 q8160</figcaption>
+    <img class="framed" width="256" height="256" src="img/wafer-example.png">
+  </figure>
+  <footer><p>This page was last modified in 2025. The image on this page is licensed under
+  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></footer>
 </html>

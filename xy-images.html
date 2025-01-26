@@ -6,92 +6,86 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/images.css">
   <title>XY Images</title>
-  <header>
-    <p><a href="/">Husam Alhomsi</a></p>
-  </header>
-  <main>
-    <h1>XY Images</h1>
-    <p>XY images are a kind of mathematical art. I discovered them around 2020.</p>
-    <section>
-      <h2>Software</h2>
-      <ul>
-        <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/xy-png.c">xy-png</a> - write an XY image to a PNG file
-      </ul>
-      <p>This program is part of <a href="misk">Misk</a>.</p>
-    </section>
-    <section>
-      <h2>Definition</h2>
-      <p>Let &naturals; be the set of all nonnegative integers.
-      For an XY image with width w and height h, in pixels, w, h &in; &naturals; &setminus; {0},
-      let X = {x &in; &naturals; &mid; x &lt; w}, Y = {y &in; &naturals; &mid; y &lt; h}, and P = {x &sdot; y &mid; x &in; X, y &in; Y}.
-      Number the pixels 0, 1, &hellip; from top to bottom and left to right.
-      A pixel is white if its number is in P, otherwise it is black.</p>
-    </section>
-    <section>
-      <h2>Example</h2>
-      <p>For the XY image with width w = 3 and height h = 2, the sets defined above become:</p>
-      <ul>
-        <li>X = {0, 1, 2}
-        <li>Y = {0, 1}
-        <li>P = {0 &sdot; 0, 0 &sdot; 1, 1 &sdot; 0, 1 &sdot; 1, 2 &sdot; 0, 2 &sdot; 1} = {0, 1, 2}
-      </ul>
-      <p>The pixels are numbered as follows:</p>
-      <figure><table class="image">
-        <tr><td>0<td>1<td>2
-        <tr><td>3<td>4<td>5
-      </table></figure>
-      <p>And colored as follows:</p>
-      <figure><table class="image">
-        <tr><td>White<td>White<td>White
-        <tr><td>Black<td>Black<td>Black
-      </table></figure>
-      <p>Pixel 0 is white because 0 is in P. Pixel 3 is black because 3 is not in P.</p>
-    </section>
-    <section>
-      <h2>Observations</h2>
-      <ul>
-        <li>The top row of an XY image is white if
-          <ul>
-            <li>the width and height are equal to 1 or
-            <li>the height is greater than 1.
-          </ul>
-        <li>The bottom row is black if the height is greater than 1.
-        <li>Flood-filling the top row reveals shapes that I call <i>stalactites</i>.
-      </ul>
-    </section>
-    <section class="inline-block-figures">
-      <h2>Gallery</h2>
-      <p>Here are some images written using xy-png.</p>
-      <figure>
-        <figcaption>Figure 1. Square XY images with side lengths 256 and 251.</figcaption>
-        <img class="framed" width="256" height="256" src="img/xy/w256h256.xy.png">
-        <img class="framed" width="256" height="256" src="img/xy/w251h251.xy.png">
-      </figure>
-      <figure>
-        <figcaption>Figure 2. Stalactites of Figure 1.</figcaption>
-        <img class="framed" width="256" height="256" src="img/xy/w256h256s.xy.png">
-        <img class="framed" width="256" height="256" src="img/xy/w251h251s.xy.png">
-      </figure>
-      <figure>
-        <figcaption>Figure 3. Horizontal projections of Figure 1.</figcaption>
-        <img class="framed" width="256" height="256" src="img/xy/w256h256H.xy.png">
-        <img class="framed" width="256" height="256" src="img/xy/w251h251H.xy.png">
-      </figure>
-      <figure>
-        <figcaption>Figure 4. Vertical projections of Figure 1.</figcaption>
-        <img class="framed" width="256" height="256" src="img/xy/w256h256V.xy.png">
-        <img class="framed" width="256" height="256" src="img/xy/w251h251V.xy.png">
-      </figure>
-      <p>To see the relationship between Figure 1 and Figure 2, use a graphics editor to:</p>
-      <ol>
-        <li>Copy and paste (or save and open) an image from Figure 1.
-        <li>Flood-fill the top row with a color other than black or white.
-        <li>Select all the white pixels, then color them black.
-      </ol>
-    </section>
-  </main>
-  <footer>
-    <p><small>This page was last modified in 2025. The images on this page are licensed under
-    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</small></p>
-  </footer>
+  <header><p><a href="/">Husam Alhomsi</a></p></header>
+  <h1>XY Images</h1>
+  <p>XY images are a kind of mathematical art. I discovered them around 2020.</p>
+  <section>
+    <h2>Software</h2>
+    <ul>
+      <li><a href="https://github.com/husamalhomsi/misk/blob/main/src/xy-png.c">xy-png</a> - write an XY image to a PNG file
+    </ul>
+    <p>This program is part of <a href="misk">Misk</a>.</p>
+  </section>
+  <section>
+    <h2>Definition</h2>
+    <p>Let &naturals; be the set of all nonnegative integers.
+    For an XY image with width w and height h, in pixels, w, h &in; &naturals; &setminus; {0},
+    let X = {x &in; &naturals; &mid; x &lt; w}, Y = {y &in; &naturals; &mid; y &lt; h}, and P = {x &sdot; y &mid; x &in; X, y &in; Y}.
+    Number the pixels 0, 1, &hellip; from top to bottom and left to right.
+    A pixel is white if its number is in P, otherwise it is black.</p>
+  </section>
+  <section>
+    <h2>Example</h2>
+    <p>For the XY image with width w = 3 and height h = 2, the sets defined above become:</p>
+    <ul>
+      <li>X = {0, 1, 2}
+      <li>Y = {0, 1}
+      <li>P = {0 &sdot; 0, 0 &sdot; 1, 1 &sdot; 0, 1 &sdot; 1, 2 &sdot; 0, 2 &sdot; 1} = {0, 1, 2}
+    </ul>
+    <p>The pixels are numbered as follows:</p>
+    <figure><table class="image">
+      <tr><td>0<td>1<td>2
+      <tr><td>3<td>4<td>5
+    </table></figure>
+    <p>And colored as follows:</p>
+    <figure><table class="image">
+      <tr><td>White<td>White<td>White
+      <tr><td>Black<td>Black<td>Black
+    </table></figure>
+    <p>Pixel 0 is white because 0 is in P. Pixel 3 is black because 3 is not in P.</p>
+  </section>
+  <section>
+    <h2>Observations</h2>
+    <ul>
+      <li>The top row of an XY image is white if
+        <ul>
+          <li>the width and height are equal to 1 or
+          <li>the height is greater than 1.
+        </ul>
+      <li>The bottom row is black if the height is greater than 1.
+      <li>Flood-filling the top row reveals shapes that I call <i>stalactites</i>.
+    </ul>
+  </section>
+  <section class="inline-block-figures">
+    <h2>Gallery</h2>
+    <p>Here are some images written using xy-png.</p>
+    <figure>
+      <figcaption>Figure 1. Square XY images with side lengths 256 and 251.</figcaption>
+      <img class="framed" width="256" height="256" src="img/xy/w256h256.xy.png">
+      <img class="framed" width="256" height="256" src="img/xy/w251h251.xy.png">
+    </figure>
+    <figure>
+      <figcaption>Figure 2. Stalactites of Figure 1.</figcaption>
+      <img class="framed" width="256" height="256" src="img/xy/w256h256s.xy.png">
+      <img class="framed" width="256" height="256" src="img/xy/w251h251s.xy.png">
+    </figure>
+    <figure>
+      <figcaption>Figure 3. Horizontal projections of Figure 1.</figcaption>
+      <img class="framed" width="256" height="256" src="img/xy/w256h256H.xy.png">
+      <img class="framed" width="256" height="256" src="img/xy/w251h251H.xy.png">
+    </figure>
+    <figure>
+      <figcaption>Figure 4. Vertical projections of Figure 1.</figcaption>
+      <img class="framed" width="256" height="256" src="img/xy/w256h256V.xy.png">
+      <img class="framed" width="256" height="256" src="img/xy/w251h251V.xy.png">
+    </figure>
+    <p>To see the relationship between Figure 1 and Figure 2, use a graphics editor to:</p>
+    <ol>
+      <li>Copy and paste (or save and open) an image from Figure 1.
+      <li>Flood-fill the top row with a color other than black or white.
+      <li>Select all the white pixels, then color them black.
+    </ol>
+  </section>
+  <footer><p>This page was last modified in 2025. The images on this page are licensed under
+  <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p></footer>
 </html>
