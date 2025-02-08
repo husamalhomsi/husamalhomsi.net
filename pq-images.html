@@ -40,9 +40,9 @@
     are nonnegative integers called x-offset and y-offset, respectively. Pixel (0, 0) is called the origin.</p>
     <p>There are 50 defined painters, 0 through 49, divided into 10 classes, 0 through 9.
     They are defined in such a way that p#(q, (x, y)) = p#(q, (y, x)).
-    Painters in odd classes divide by q, so q = 0 is undefined for them.
-    The following is a list of all painters, where <i>&</i> denotes bitwise AND, <i>|</i> denotes bitwise inclusive OR,
-    <i>^</i> denotes bitwise exclusive OR, <i>*</i> denotes multiplication, which has the highest precedence, and <i>%</i> denotes modulo:</p>
+    Painters in odd classes divide by q, so q = 0 is undefined for them.</p>
+    <p>The following is a list of all painters, where & denotes bitwise AND, | denotes bitwise inclusive OR,
+    ^ denotes bitwise exclusive OR, * denotes multiplication, which has the highest precedence, and % denotes modulo:</p>
     <ul id="painters">
       <li>Class 0
         <ul>
@@ -129,7 +129,7 @@
   <section>
     <h2>Example</h2>
     <p>For a PQ image with width 3, height 2, x-offset x<sub>0</sub> = 1, and y-offset y<sub>0</sub> = 2,
-    the pixels have the following coordinates:</p>
+    the pixels of the image are numbered as follows:</p>
     <figure><table class="image">
       <tr><td>(1, 2)<td>(2, 2)<td>(3, 2)
       <tr><td>(1, 3)<td>(2, 3)<td>(3, 3)
@@ -153,7 +153,7 @@
   <section>
     <h2>Observations</h2>
     <ul>
-      <li>PQ images are symmetric around the line y = x.
+      <li>PQ images are symmetric around the line x = y.
       <li>The <a href="https://mathworld.wolfram.com/SierpinskiSieve.html">Sierpinski sieve</a>
       or variations of it seem to occur in painters 0, 5, 6, 20, 30, 31, 32, 35, and 36.
       <li><a href="https://mathworld.wolfram.com/CantorDust.html">Cantor dust</a>
