@@ -18,19 +18,19 @@
   </section>
   <section>
     <h2>Definition</h2>
-    <p>Let positive integers <var>w</var> and <var>h</var> be the width and height of an XY image, in pixels, respectively.
-    Let <var>X</var> and <var>Y</var> be the sets of nonnegative integers less than <var>w</var> and <var>h</var>, respectively.
-    Let <var>P</var> be the set of products of multiplying every element of <var>X</var> by every element of <var>Y</var>.
+    <p>Let positive integers w and h be the width and height of an XY image, in pixels, respectively.
+    Let X and Y be the sets of nonnegative integers less than w and h, respectively.
+    Let P be the set of products of multiplying every element of X by every element of Y.
     Number the pixels of the image 0, 1, 2, and so on from top to bottom and left to right.
-    A pixel is white if its number is in <var>P</var>, otherwise it is black.</p>
+    A pixel is white if its number is in P, otherwise it is black.</p>
   </section>
   <section>
     <h2>Example</h2>
-    <p>For the XY image with width <var>w</var> = 3 and height <var>h</var> = 2, the sets defined above become:</p>
+    <p>For the XY image with width w = 3 and height h = 2, the sets defined above become:</p>
     <ul>
-      <li><var>X</var> = {0, 1, 2}
-      <li><var>Y</var> = {0, 1}
-      <li><var>P</var> = {0 &times; 0, 0 &times; 1, 1 &times; 0, 1 &times; 1, 2 &times; 0, 2 &times; 1} = {0, 1, 2}
+      <li>X = {0, 1, 2}
+      <li>Y = {0, 1}
+      <li>P = {0 &times; 0, 0 &times; 1, 1 &times; 0, 1 &times; 1, 2 &times; 0, 2 &times; 1} = {0, 1, 2}
     </ul>
     <p>The pixels of the image are numbered as follows:</p>
     <figure><table class="image">
@@ -42,14 +42,14 @@
       <tr><td>White<td>White<td>White
       <tr><td>Black<td>Black<td>Black
     </table></figure>
-    <p>Pixel 0 is white because 0 is in <var>P</var>. Pixel 3 is black because 3 is not in <var>P</var>.</p>
+    <p>Pixel 0 is white because 0 is in P. Pixel 3 is black because 3 is not in P.</p>
   </section>
   <section>
     <h2>Observations</h2>
     <ul>
       <li>The number of white pixels in an XY image is <i>coming soon</i>.
-      <li>The top row is white if <var>w</var> = <var>h</var> = 1 or <var>h</var> > 1.
-      <li>The bottom row is black if <var>h</var> > 1.
+      <li>The top row is white if w = h = 1 or h > 1.
+      <li>The bottom row is black if h > 1.
       <li>Flood-filling the top row reveals shapes that I call <i>stalactites</i>.
     </ul>
   </section>

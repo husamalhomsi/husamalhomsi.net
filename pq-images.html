@@ -30,17 +30,17 @@
   </section>
   <section>
     <h2>Definition</h2>
-    <p>In a PQ image, a function p#(q, (x, y)) is applied to every pixel.
+    <p>In a PQ image, a function of the form p<sub>#</sub>(q, (x, y)) is applied to every pixel.
     The #, q, x, y, and output of the function are nonnegative integers.
     The function is called a painter. The # is called the identifier (ID). The q is called the q-argument.
     The x and y are the horizontal and vertical coordinates of a pixel, respectively.
-    Pixel (x, y) is white if p#(q, (x, y)) = 0, otherwise it is black.</p>
+    Pixel (x, y) is white if p<sub>#</sub>(q, (x, y)) = 0, otherwise it is black.</p>
     <p>For pixel (x, y), the pixel to its right is at (x + 1, y), and the pixel below it is at (x, y + 1).
     The top-left pixel is at (x<sub>0</sub>, y<sub>0</sub>), where x<sub>0</sub> and y<sub>0</sub>
     are nonnegative integers called x-offset and y-offset, respectively. Pixel (0, 0) is called the origin.</p>
     <p>There are 50 defined painters, 0 through 49, divided into 10 classes, 0 through 9.
-    They are defined in such a way that p#(q, (x, y)) = p#(q, (y, x)).
-    Painters in odd classes divide by q, so q = 0 is undefined for them.</p>
+    Painters in odd classes divide by q, so q = 0 is undefined for them.
+    For all painters, p<sub>#</sub>(q, (x, y)) = p<sub>#</sub>(q, (y, x)).</p>
     <p>The following is a list of all painters, where & denotes bitwise AND, | denotes bitwise inclusive OR,
     ^ denotes bitwise exclusive OR, * denotes multiplication, which has the highest precedence, and % denotes modulo:</p>
     <ul id="painters">
@@ -136,19 +136,19 @@
     </table></figure>
     <p>Painter 8 with q-argument 4 is applied to every pixel as follows:</p>
     <ul>
-      <li>p8(4, (1, 2)) = (1 + 2) % 4 = 3
-      <li>p8(4, (2, 2)) = (2 + 2) % 4 = 0
-      <li>p8(4, (3, 2)) = (3 + 2) % 4 = 1
-      <li>p8(4, (1, 3)) = (1 + 3) % 4 = 0
-      <li>p8(4, (2, 3)) = (2 + 3) % 4 = 1
-      <li>p8(4, (3, 3)) = (3 + 3) % 4 = 2
+      <li>p<sub>8</sub>(4, (1, 2)) = (1 + 2) % 4 = 3
+      <li>p<sub>8</sub>(4, (2, 2)) = (2 + 2) % 4 = 0
+      <li>p<sub>8</sub>(4, (3, 2)) = (3 + 2) % 4 = 1
+      <li>p<sub>8</sub>(4, (1, 3)) = (1 + 3) % 4 = 0
+      <li>p<sub>8</sub>(4, (2, 3)) = (2 + 3) % 4 = 1
+      <li>p<sub>8</sub>(4, (3, 3)) = (3 + 3) % 4 = 2
     </ul>
     <p>The pixels are colored as follows:</p>
     <figure><table class="image">
       <tr><td>Black<td>White<td>Black
       <tr><td>White<td>Black<td>Black
     </table></figure>
-    <p>Pixel (2, 2) is white because p8(4, (2, 2)) = 0. Pixel (1, 2) is black because p8(4, (1, 2)) &ne; 0.</p>
+    <p>Pixel (2, 2) is white because p<sub>8</sub>(4, (2, 2)) = 0. Pixel (1, 2) is black because p<sub>8</sub>(4, (1, 2)) &ne; 0.</p>
   </section>
   <section>
     <h2>Observations</h2>
