@@ -25,8 +25,8 @@ function paint() {
 
       if (painter == 8)
         s = (x + y) % q;
-      else if (painter == 25)
-        s = (q * x & q * y) % q;
+      else if (painter == 42)
+        s = ((q ^ x) * x + (q ^ y) * y) & q;
 
       s = s ? 0 : 255;
 
