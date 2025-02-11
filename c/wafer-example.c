@@ -1,14 +1,14 @@
 #include "wafer.h"
 
 #define L 256
-#define Q 240
+#define Q 4080
 
 int main(void) {
   uint8_t audio[L * L];
 
   for (int y = 0; y < L; ++y)
     for (int x = 0; x < L; ++x)
-      audio[y * L + x] = x & y & Q ? 0 : 255;
+      audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 0 : 255;
 
   wafer_file *file = wafer_open("wafer-example.wav");
   wafer_set_channels(file, 1);

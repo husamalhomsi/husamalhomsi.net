@@ -7,5 +7,5 @@ cc ../c/wafer-example.c
 rm a.out
 mv *.wav ../audio/
 
-pq-png -z -p 0 -q 240
+pq-png -z -p 32 -q 4080
 mv *.png ../img/wafer-example.png
