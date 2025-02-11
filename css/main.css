@@ -70,6 +70,10 @@ math[display="block"] {
   margin-block: 1em;
 }
 
+sub, sup {
+  line-height: 0;
+}
+
 a {
   color: inherit;
   outline-style: none;
