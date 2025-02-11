@@ -23,8 +23,8 @@ function paint() {
     for (let x = 0; x < canvas.width; ++x) {
       let i = (y * canvas.width + x) * 4, s;
 
-      if (painter == 8)
-        s = (x + y) % q;
+      if (painter == 2)
+        s = (x ^ y) & q;
       else if (painter == 42)
         s = ((q ^ x) * x + (q ^ y) * y) & q;
 
