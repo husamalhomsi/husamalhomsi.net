@@ -1,7 +1,7 @@
 #include "wafer.h"
 
 #define L 256
-#define Q 4080
+#define Q 8160
 
 int main(void) {
   uint8_t audio[L * L];
