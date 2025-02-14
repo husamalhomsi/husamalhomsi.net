@@ -9,7 +9,7 @@
   <h1>How to Stop Cursor Blinking in Linux Virtual Terminals</h1>
   <p>In Linux virtual terminals, the cursor may blink by default. This can be distracting.</p>
   <p>On Linux systems, the file /sys/class/graphics/fbcon/cursor_blink contains a number.
-  Whether the number is 1 or 0 determines whether the cursor blinks or not.
+  Whether the number is 1 or 0 determines whether the cursor blinks or not, respectively.
   The file requires root's permission to be written, and its contents are reset at reboot.
   Setting the contents to 0 at reboot should stop the blinking. Here is how to do that:</p>
   <ol>
