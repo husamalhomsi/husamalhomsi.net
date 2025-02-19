@@ -6,12 +6,6 @@
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/images.css">
-  <style>
-    ul#painters ul {
-      font-family: monospace;
-      white-space: nowrap;
-    }
-  </style>
   <script src="js/pq-images.js"></script>
   <title>PQ Images</title>
   <header><p><a href="/">Husam Alhomsi</a></p></header>
@@ -43,7 +37,7 @@
     For all painters, p<sub>#</sub>(q, (x, y)) = p<sub>#</sub>(q, (y, x)).</p>
     <p>The following is a list of all painters, where & denotes bitwise AND, | denotes bitwise inclusive OR,
     ^ denotes bitwise exclusive OR, * denotes multiplication, which has the highest precedence, and % denotes modulo:</p>
-    <ul id="painters">
+    <ul style="font-family: monospace; white-space: nowrap;">
       <li>Class 0
         <ul>
           <li>p<sub>0</sub> = (x & y) & q
