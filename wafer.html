@@ -20,8 +20,8 @@
 int main(void) {
   uint8_t audio[L * L];
 
-  for (int y = 0; y < L; ++y)
-    for (int x = 0; x < L; ++x)
+  for (int y = 0; y &lt; L; ++y)
+    for (int x = 0; x &lt; L; ++x)
       audio[y * L + x] = ((Q ^ x) * x & (Q ^ y) * y) & Q ? 0 : 255;
 
   wafer_file *file = wafer_open("wafer-example.wav");
