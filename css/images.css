@@ -1,7 +1,3 @@
-canvas.framed, img.framed {
-  border: solid black 1px;
-}
-
 table.image td {
   text-align: center;
   width: 3em;

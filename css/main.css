@@ -19,6 +19,7 @@ footer {
 }
 
 canvas, img {
+  border: solid black 1px;
   height: auto;
   image-rendering: pixelated;
   max-width: 100%;
