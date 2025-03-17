@@ -27,7 +27,7 @@
     The #, q, x, y, and output of the function are nonnegative integers.
     The function is called a painter. The # is called the identifier (ID). The q is called the q-value.
     The x and y are the horizontal and vertical coordinates of a pixel, respectively.
-    Pixel (x, y) is white if p<sub>#</sub>(q, (x, y)) = 0, otherwise it is black.</p>
+    Pixel (x, y) is black if p<sub>#</sub>(q, (x, y)) = 0, otherwise it is white.</p>
     <p>For pixel (x, y), the pixel to its right is at (x + 1, y), and the pixel below it is at (x, y + 1).
     The top-left pixel is at (x<sub>0</sub>, y<sub>0</sub>), where x<sub>0</sub> and y<sub>0</sub>
     are nonnegative integers called x-offset and y-offset, respectively. Pixel (0, 0) is called the origin.</p>
@@ -138,10 +138,10 @@
     </ul>
     <p>The pixels are colored as follows:</p>
     <figure><table class="image">
-      <tr><td>Black<td>White<td>Black
-      <tr><td>White<td>Black<td>Black
+      <tr><td>White<td>Black<td>White
+      <tr><td>Black<td>White<td>White
     </table></figure>
-    <p>Pixel (2, 2) is white because p<sub>8</sub>(4, (2, 2)) = 0. Pixel (1, 2) is black because p<sub>8</sub>(4, (1, 2)) &ne; 0.</p>
+    <p>Pixel (2, 2) is black because p<sub>8</sub>(4, (2, 2)) = 0. Pixel (1, 2) is white because p<sub>8</sub>(4, (1, 2)) &ne; 0.</p>
   </section>
   <section>
     <h2>Observations</h2>

@@ -28,7 +28,7 @@ function paint() {
       else if (painter == 42)
         s = ((q ^ x) * x + (q ^ y) * y) & q;
 
-      s = s ? 0 : 255;
+      s = s ? 255 : 0;
 
       imageData.data[i    ] = s;
       imageData.data[i + 1] = s;

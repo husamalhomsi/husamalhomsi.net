@@ -22,7 +22,7 @@
     Let X and Y be the sets of nonnegative integers less than w and h, respectively.
     Let P be the set of products of multiplying every element of X by every element of Y.
     Number the pixels of the image 0, 1, 2, and so on from top to bottom and left to right.
-    A pixel is white if its number is in P, otherwise it is black.</p>
+    A pixel is black if its number is in P, otherwise it is white.</p>
   </section>
   <section>
     <h2>Example</h2>
@@ -39,16 +39,16 @@
     </table></figure>
     <p>And colored as follows:</p>
     <figure><table class="image">
-      <tr><td>White<td>White<td>White
       <tr><td>Black<td>Black<td>Black
+      <tr><td>White<td>White<td>White
     </table></figure>
-    <p>Pixel 0 is white because 0 is in P. Pixel 3 is black because 3 is not in P.</p>
+    <p>Pixel 0 is black because 0 is in P. Pixel 3 is white because 3 is not in P.</p>
   </section>
   <section>
     <h2>Observations</h2>
     <ul>
-      <li>The top row is white if w = h = 1 or h > 1.
-      <li>The bottom row is black if h > 1.
+      <li>The top row is black if w = h = 1 or h > 1.
+      <li>The bottom row is white if h > 1.
       <li>Flood-filling the top row reveals shapes that I call <i>stalactites</i>.
     </ul>
   </section>
@@ -79,7 +79,7 @@
     <ol>
       <li>Copy and paste (or save and open) an image from Figure 1.
       <li>Flood-fill the top row with a color other than black or white.
-      <li>Select all the white pixels, then color them black.
+      <li>Select all the black pixels, then color them white.
     </ol>
   </section>
   <footer><p>This page was last modified in 2025. The images on this page are licensed under
