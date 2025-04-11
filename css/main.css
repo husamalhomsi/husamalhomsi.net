@@ -18,6 +18,10 @@ footer {
   font-size: smaller;
 }
 
+audio, canvas, img {
+  vertical-align: top;
+}
+
 canvas, img {
   border: solid black 1px;
   height: auto;
