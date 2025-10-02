@@ -1,6 +1,9 @@
+// vortex.c - write Vortex to an SVG file
+
 #include <math.h>
 #include <stdio.h>
 
+// Full angle in radians
 #define TAU 6.28318530717958647692
 
 static FILE *file;
@@ -9,7 +12,6 @@ static double o; // Rhombus opening angle
 static double a; // Rhombus acute angle
 static double s; // Rhombus side
 static double d; // Rhombus diagonal that bisects a
-static double l; // Coordinate limit
 
 static void rhombus(double x, double y, double direction) {
   double vertex2x = x + cos(direction + o) * s;
@@ -31,24 +33,28 @@ int main(void) {
   int rhombi = 24;
   o = TAU / rhombi;
   a = 2 * o;
-  s = desktop ? 32 : 55;
+  s = desktop ? 1.0 : 2.0 / 3.0;
   d = 2 * cos(o) * s;
-  l = 4 * s;
 
   file = fopen("vortex.svg", "w");
 
   if (!file)
     return 1;
 
-  int w = desktop ? 256 : 750;
-  int h = desktop ? 256 : 1334;
+  // Viewport width and height
+  double vw = desktop ? 8 : 9;
+  double vh = desktop ? 8 : 16;
+
+  // Physical width and height
+  double pw = desktop ? 256 : 750;
+  double ph = desktop ? 256 : 1334;
 
   fprintf(file,
     "<?xml version='1.0'?>\n"
     "<svg xmlns='http://www.w3.org/2000/svg' "
-    "viewBox='%d %d %d %d' width='%dpx' height='%dpx' fill='black'>\n"
-    "  <rect x='%d' y='%d' width='100%%' height='100%%' fill='white'/>\n",
-    -w / 2, -h / 2, w, h, w, h, -w / 2, -h / 2);
+    "viewBox='%g %g %g %g' width='%gpx' height='%gpx' fill='black'>\n"
+    "  <rect x='%g' y='%g' width='%g' height='%g' fill='white'/>\n",
+    -vw / 2, -vh / 2, vw, vh, pw, ph, -vw / 2, -vh / 2, vw, vh);
 
   double angle = 0;
   double direction = angle + TAU / 8;
