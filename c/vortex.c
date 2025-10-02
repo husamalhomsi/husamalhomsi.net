@@ -41,20 +41,14 @@ int main(void) {
   if (!file)
     return 1;
 
-  // Viewport width and height
-  double vw = desktop ? 8 : 9;
-  double vh = desktop ? 8 : 16;
-
-  // Physical width and height
-  double pw = desktop ? 256 : 750;
-  double ph = desktop ? 256 : 1334;
+  double w = desktop ? 8 : 9;
+  double h = desktop ? 8 : 16;
 
   fprintf(file,
     "<?xml version='1.0'?>\n"
-    "<svg xmlns='http://www.w3.org/2000/svg' "
-    "viewBox='%g %g %g %g' width='%gpx' height='%gpx' fill='black'>\n"
+    "<svg xmlns='http://www.w3.org/2000/svg' viewBox='%g %g %g %g' fill='black'>\n"
     "  <rect x='%g' y='%g' width='%g' height='%g' fill='white'/>\n",
-    -vw / 2, -vh / 2, vw, vh, pw, ph, -vw / 2, -vh / 2, vw, vh);
+    -w / 2, -h / 2, w, h, -w / 2, -h / 2, w, h);
 
   double angle = 0;
   double direction = angle + TAU / 8;
