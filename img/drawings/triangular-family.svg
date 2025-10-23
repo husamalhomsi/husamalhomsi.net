@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='black'>
-  <rect x='0' y='0' width='100%' height='100%' fill='white'/>
+  <rect x='0' y='0' width='14' height='14' fill='white'/>
   <!-- Daughter -->
   <circle r='0.5' cx='2' cy='7.5'/>
   <polygon points='2,8.25 3,13 1,13'/>
