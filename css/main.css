@@ -63,10 +63,6 @@ input, select {
   font-size: inherit;
 }
 
-input:focus, select:focus {
-  outline: solid black 1px;
-}
-
 li {
   margin-block: 0.5em;
 }
@@ -81,11 +77,9 @@ sub, sup {
 
 a {
   color: inherit;
-  outline-style: none;
   text-decoration: underline;
 }
 
 a:focus, a:hover, ::selection {
-  background-color: black;
-  color: white;
+  background-color: silver;
 }
