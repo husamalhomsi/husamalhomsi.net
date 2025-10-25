@@ -83,3 +83,9 @@ a {
 a:focus, a:hover, ::selection {
   background-color: silver;
 }
+
+@media print {
+  body {
+    max-width: none;
+  }
+}
