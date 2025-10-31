@@ -80,7 +80,7 @@ a {
   text-decoration: underline;
 }
 
-a:focus, a:hover, ::selection {
+::selection {
   background-color: silver;
 }
 
