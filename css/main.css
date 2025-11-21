@@ -81,7 +81,7 @@ a {
 }
 
 ::selection {
-  background-color: silver;
+  background-color: lightgray;
 }
 
 @media print {
