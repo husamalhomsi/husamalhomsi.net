@@ -9,12 +9,12 @@ body {
 }
 
 header {
-  border-bottom: solid black 1px;
+  border-bottom: 1px solid black;
   font-size: larger;
 }
 
 footer {
-  border-top: solid black 1px;
+  border-top: 1px solid black;
   font-size: smaller;
 }
 
@@ -23,15 +23,15 @@ audio, canvas, img {
 }
 
 canvas, img {
-  border: solid black 1px;
+  border: 1px solid black;
   height: auto;
   image-rendering: pixelated;
   max-width: calc(100% - 2px);
 }
 
 pre {
-  border-top: solid black 1px;
-  border-left: solid black 1px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
   max-width: 100%;
   overflow: auto;
   padding: 1em;
@@ -40,7 +40,7 @@ pre {
 }
 
 fieldset, input, select, td, th {
-  border: solid black 1px;
+  border: 1px solid black;
 }
 
 table {
