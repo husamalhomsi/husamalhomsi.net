@@ -71,6 +71,7 @@ math[display="block"] {
   margin-block: 1em;
   margin-inline: 40px;
   text-align: inherit;
+  width: max-content;
 }
 
 sub, sup {
