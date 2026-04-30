@@ -90,5 +90,6 @@ a {
 @media print {
   body {
     max-width: none;
+    padding: 0;
   }
 }
