@@ -18,6 +18,11 @@ footer {
   font-size: smaller;
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 audio, canvas, img {
   vertical-align: top;
 }
@@ -29,30 +34,16 @@ canvas, img {
   max-width: calc(100% - 2px);
 }
 
-pre {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em;
-  scrollbar-color: black white;
-  scrollbar-width: thin;
+fieldset {
+  width: max-content;
 }
 
 fieldset, input, select, td, th {
   border: 1px solid black;
 }
 
-table {
-  border-collapse: collapse;
-}
-
 fieldset, td, th {
   padding: 0.5em;
-}
-
-fieldset {
-  width: max-content;
 }
 
 input, select {
@@ -74,13 +65,26 @@ math[display="block"] {
   width: max-content;
 }
 
+pre {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em;
+  scrollbar-color: black white;
+  scrollbar-width: thin;
+}
+
 sub, sup {
   line-height: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: underline;
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: left;
 }
 
 ::selection {
