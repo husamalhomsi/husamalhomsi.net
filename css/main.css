@@ -12,12 +12,12 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #666;
   font-size: larger;
 }
 
 footer {
-  border-top: 1px solid #999;
+  border-top: 1px solid #666;
   font-size: smaller;
 }
 
@@ -31,7 +31,7 @@ audio, canvas, img {
 }
 
 canvas, img {
-  border: 1px solid #999;
+  border: 1px solid #666;
   height: auto;
   image-rendering: pixelated;
   max-width: calc(100% - 2px);
@@ -42,7 +42,7 @@ fieldset {
 }
 
 fieldset, input, select, td, th {
-  border: 1px solid #999;
+  border: 1px solid #666;
 }
 
 fieldset, td, th {
@@ -61,12 +61,12 @@ math[display="block"] {
 }
 
 pre {
-  border-top: 1px solid #999;
-  border-left: 1px solid #999;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
   max-width: 100%;
   overflow: auto;
   padding: 1em;
-  scrollbar-color: #999 #fff;
+  scrollbar-color: #666 #fff;
   scrollbar-width: thin;
 }
 
@@ -83,7 +83,7 @@ td, th {
 }
 
 ::selection {
-  background-color: #ccc;
+  background-color: #fe9;
 }
 
 @media print {
