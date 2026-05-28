@@ -1,4 +1,6 @@
 html {
+  --line-color: #959595;
+
   background-color: #fff;
   color: #000;
   font-family: sans-serif;
@@ -12,17 +14,17 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid var(--line-color);
   font-size: larger;
 }
 
 footer {
-  border-top: 1px solid #666;
+  border-top: 1px solid var(--line-color);
   font-size: smaller;
 }
 
 a {
-  color: #666;
+  color: #595959;
   text-decoration: underline;
 }
 
@@ -31,7 +33,7 @@ audio, canvas, img {
 }
 
 canvas, img {
-  border: 1px solid #666;
+  border: 1px solid var(--line-color);
   height: auto;
   image-rendering: pixelated;
   max-width: calc(100% - 2px);
@@ -42,11 +44,16 @@ fieldset {
 }
 
 fieldset, input, select, td, th {
-  border: 1px solid #666;
+  border: 1px solid var(--line-color);
 }
 
 fieldset, td, th {
   padding: 0.5em;
+}
+
+input, select {
+  border-radius: 0;
+  color: black;
 }
 
 li {
@@ -61,12 +68,12 @@ math[display="block"] {
 }
 
 pre {
-  border-top: 1px solid #666;
-  border-left: 1px solid #666;
+  border-top: 1px solid var(--line-color);
+  border-left: 1px solid var(--line-color);
   max-width: 100%;
   overflow: auto;
   padding: 1em;
-  scrollbar-color: #666 #fff;
+  scrollbar-color: var(--line-color) #fff;
   scrollbar-width: thin;
 }
 
@@ -80,10 +87,6 @@ table {
 
 td, th {
   text-align: left;
-}
-
-::selection {
-  background-color: #fe9;
 }
 
 @media print {
