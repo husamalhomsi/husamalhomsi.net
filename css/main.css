@@ -1,5 +1,5 @@
 html {
-  --line-color: #959595;
+  --line-color: #949494;
 
   background-color: white;
   color: black;
@@ -40,6 +40,8 @@ canvas, img {
 }
 
 fieldset {
+  margin: 1em 0;
+  padding: 0 0.5em;
   width: max-content;
 }
 
@@ -47,17 +49,13 @@ fieldset, input, select, td, th {
   border: 1px solid var(--line-color);
 }
 
-fieldset, td, th {
-  padding: 0.5em;
+fieldset p, li {
+  margin-block: 0.5em;
 }
 
 input, select {
   border-radius: 0;
   color: inherit;
-}
-
-li {
-  margin-block: 0.5em;
 }
 
 math[display="block"] {
@@ -86,6 +84,7 @@ table {
 }
 
 td, th {
+  padding: 0.5em;
   text-align: left;
 }
 
