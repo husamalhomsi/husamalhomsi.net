@@ -32,8 +32,11 @@ audio, canvas, img {
   vertical-align: top;
 }
 
-canvas, img {
+canvas, fieldset, img, input, select, td, th {
   border: 1px solid var(--line-color);
+}
+
+canvas, img {
   height: auto;
   image-rendering: pixelated;
   max-width: calc(100% - 2px);
@@ -43,10 +46,6 @@ fieldset {
   margin: 1em 0;
   padding: 0 0.5em;
   width: max-content;
-}
-
-fieldset, input, select, td, th {
-  border: 1px solid var(--line-color);
 }
 
 fieldset p, li {
@@ -71,7 +70,6 @@ pre {
   max-width: 100%;
   overflow: auto;
   padding: 1em;
-  scrollbar-color: var(--line-color) transparent;
   scrollbar-width: thin;
 }
 
