@@ -79,6 +79,7 @@ sub, sup {
 
 table {
   border-collapse: collapse;
+  margin-block: 1em;
 }
 
 td, th {
